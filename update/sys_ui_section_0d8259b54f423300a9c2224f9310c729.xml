@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Totals" section_id="0d8259b54f423300a9c2224f9310c729" sys_domain="global" table="x_172976_dsm_mvp_transistion_plan_header" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_onsite_headcount</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-15 17:22:46</sys_created_on>
+            <sys_id>4d8299b54f423300a9c2224f9310c79a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Totals" display_value="Totals" name="x_172976_dsm_mvp_transistion_plan_header" sys_domain="global" view="Default view">0d8259b54f423300a9c2224f9310c729</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-15 17:22:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_offshore_headcount</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-15 17:22:46</sys_created_on>
+            <sys_id>cd8299b54f423300a9c2224f9310c79a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Totals" display_value="Totals" name="x_172976_dsm_mvp_transistion_plan_header" sys_domain="global" view="Default view">0d8259b54f423300a9c2224f9310c729</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-15 17:22:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_headcount</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-15 17:22:46</sys_created_on>
+            <sys_id>418299b54f423300a9c2224f9310c79b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Totals" display_value="Totals" name="x_172976_dsm_mvp_transistion_plan_header" sys_domain="global" view="Default view">0d8259b54f423300a9c2224f9310c729</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-15 17:22:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-15 17:22:46</sys_created_on>
+            <sys_id>c18299b54f423300a9c2224f9310c79b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Totals" display_value="Totals" name="x_172976_dsm_mvp_transistion_plan_header" sys_domain="global" view="Default view">0d8259b54f423300a9c2224f9310c729</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-15 17:22:46</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_onsite_cost</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-15 17:22:46</sys_created_on>
+            <sys_id>458299b54f423300a9c2224f9310c79b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Totals" display_value="Totals" name="x_172976_dsm_mvp_transistion_plan_header" sys_domain="global" view="Default view">0d8259b54f423300a9c2224f9310c729</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-15 17:22:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_offshore_cost</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-15 17:22:46</sys_created_on>
+            <sys_id>c58299b54f423300a9c2224f9310c79b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Totals" display_value="Totals" name="x_172976_dsm_mvp_transistion_plan_header" sys_domain="global" view="Default view">0d8259b54f423300a9c2224f9310c729</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-15 17:22:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_cost</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-15 17:22:46</sys_created_on>
+            <sys_id>498299b54f423300a9c2224f9310c79b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Totals" display_value="Totals" name="x_172976_dsm_mvp_transistion_plan_header" sys_domain="global" view="Default view">0d8259b54f423300a9c2224f9310c729</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-15 17:22:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Totals</caption>
+            <header>false</header>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-15 17:22:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d8259b54f423300a9c2224f9310c729</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Totals</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+            <sys_update_name>sys_ui_section_0d8259b54f423300a9c2224f9310c729</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-15 17:22:46</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

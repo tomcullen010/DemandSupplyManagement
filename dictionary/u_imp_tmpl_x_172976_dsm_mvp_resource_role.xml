@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 172976 Dsm Mvp Resource Role" max_length="40" name="u_imp_tmpl_x_172976_dsm_mvp_resource_role" type="collection">
+        <element attributes="import_attribute_name=Description,edge_encryption_enabled=true" label="Description" max_length="400" name="u_description" type="string"/>
+        <element attributes="import_attribute_name=Hourly Rate" label="Hourly Rate" max_length="20" name="u_hourly_rate" type="decimal"/>
+        <element attributes="import_attribute_name=Role,edge_encryption_enabled=true" label="Role" max_length="200" name="u_role" type="string"/>
+    </element>
+</database>

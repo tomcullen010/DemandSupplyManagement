@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Transition Plan Calendar" max_length="40" name="x_172976_dsm_mvp_transition_plan_calendar" type="collection">
+        <element default="0" label="Amount" max_length="20" name="amount" type="decimal"/>
+        <element default="Jan" label="Month" max_length="40" name="month" type="string"/>
+        <element default="01" label="Month num" max_length="40" name="month_num" type="integer"/>
+        <element label="Parent" max_length="32" name="parent" reference="x_172976_dsm_mvp_transition_plan" type="reference"/>
+        <element default="2018" label="Year" max_length="40" name="year" type="string"/>
+        <index name="index">
+            <element name="parent"/>
+        </index>
+    </element>
+</database>

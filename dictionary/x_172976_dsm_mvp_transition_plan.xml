@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Transition Plan Details" max_length="40" name="x_172976_dsm_mvp_transition_plan" type="collection">
+        <element label="Avg Cost Headcount hr" max_length="20" name="avg_cost_headcount_hr" type="currency"/>
+        <element label="Budgeted" max_length="40" name="budgeted" type="boolean"/>
+        <element label="Business Unit" max_length="32" name="business_unit" reference="business_unit" reference_qual="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" reference_qual_condition="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" type="reference"/>
+        <element label="Contract ID" max_length="32" name="contract_id" reference="ast_contract" type="reference"/>
+        <element label="Initiative" max_length="40" name="initiative" type="string"/>
+        <element label="LO Cost Center" max_length="32" name="lo_cost_center" reference="cmn_cost_center" type="reference"/>
+        <element label="Role" max_length="32" name="role" reference="x_172976_dsm_mvp_resource_role" type="reference"/>
+        <element label="Skills Required" max_length="40" name="skills_required" type="string"/>
+        <element choice="1" label="Skill Category" max_length="40" name="skill_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Niche" sequence="0" value="Niche"/>
+                <element inactive_on_update="false" label="Generic" sequence="1" value="Generic"/>
+                <element inactive_on_update="false" label="Super Niche" sequence="2" value="Super Niche"/>
+            </choice>
+        </element>
+        <element label="Supplier" max_length="32" name="supplier" reference="core_company" type="reference"/>
+        <element label="Transition Plan Header" max_length="32" name="transition_plan_header" reference="x_172976_dsm_mvp_transistion_plan_header" type="reference"/>
+        <element choice="1" label="Type of Work" max_length="40" name="type_of_work" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Core Business Initiative" sequence="0" value="Core Business Initiative"/>
+                <element inactive_on_update="false" label="LightsOn" sequence="1" value="LightsOn"/>
+                <element inactive_on_update="false" label="New Enhancements (SSCR)" sequence="2" value="New Enhancements (SSCR)"/>
+                <element inactive_on_update="false" label="Transformation Initiative" sequence="3" value="Transformation Initiative"/>
+            </choice>
+        </element>
+    </element>
+</database>

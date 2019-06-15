@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Transition Plan Header" max_length="40" name="x_172976_dsm_mvp_transistion_plan_header" sizeclass="1" type="collection">
+        <element label="Business Unit" max_length="32" name="business_unit" reference="business_unit" reference_qual="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" reference_qual_condition="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" type="reference"/>
+        <element default="javascript:gs.nowDateTime();" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Plan Date" max_length="40" name="plan_date" type="glide_date" use_dynamic_default="true"/>
+        <element default="{your Name} Draft Legato Transition Plan" display="true" label="Plan Name" max_length="100" name="plan_name" type="string"/>
+        <element choice="3" default="1" label="Plan Type" max_length="40" name="plan_type" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="AS IS STEADY STATE" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="TRANSITION PLAN" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="CAPTIVE RAMP UP" sequence="30" value="3"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;var tot_cost = current.total_onsite_cost + current.total_offshore_cost;&#13;&#10;&#9;return tot_cost;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="0" label="Total Cost" max_length="20" name="total_cost" type="currency" virtual="true"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;var tot_headcount = current.total_onsite_headcount + current.total_offshore_headcount;&#13;&#10;&#9;return tot_headcount;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="0" label="Total Headcount" max_length="40" name="total_headcount" type="integer" virtual="true"/>
+        <element default="0" label="Total Offshore Cost" max_length="20" name="total_offshore_cost" type="currency"/>
+        <element default="0" label="Total Offshore Headcount" max_length="40" name="total_offshore_headcount" type="integer"/>
+        <element default="0" label="Total Onsite Cost" max_length="20" name="total_onsite_cost" type="currency"/>
+        <element default="0" label="Total Onsite Headcount" max_length="40" name="total_onsite_headcount" type="integer"/>
+    </element>
+</database>
