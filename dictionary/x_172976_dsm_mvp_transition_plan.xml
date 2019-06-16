@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element extends="task" label="Transition Plan Details" max_length="40" name="x_172976_dsm_mvp_transition_plan" type="collection">
+        <element default="0.0" label="Average headcount" max_length="20" name="average_headcount" type="decimal"/>
         <element label="Avg Cost Headcount hr" max_length="20" name="avg_cost_headcount_hr" type="currency"/>
         <element label="Budgeted" max_length="40" name="budgeted" type="boolean"/>
         <element label="Business Unit" max_length="32" name="business_unit" reference="business_unit" reference_qual="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" reference_qual_condition="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" type="reference"/>
