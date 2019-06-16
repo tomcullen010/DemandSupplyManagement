@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="plan_name" table="x_172976_dsm_mvp_transistion_plan_header">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="feb" table="x_172976_dsm_mvp_transition_plan_calendar">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -14,28 +14,28 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Plan Name</column_label>
+        <column_label>Feb</column_label>
         <comments/>
         <create_roles/>
-        <default_value>{your Name} Draft Legato Transition Plan</default_value>
+        <default_value>0.0</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>true</display>
+        <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>plan_name</element>
+        <element>feb</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Decimal">decimal</internal_type>
         <mandatory>false</mandatory>
-        <max_length>100</max_length>
-        <name>x_172976_dsm_mvp_transistion_plan_header</name>
+        <max_length>20</max_length>
+        <name>x_172976_dsm_mvp_transition_plan_calendar</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -52,16 +52,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-06-15 18:37:58</sys_created_on>
-        <sys_id>92e2a9f14f823300a9c2224f9310c79d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Plan Name</sys_name>
+        <sys_created_on>2019-06-16 10:58:53</sys_created_on>
+        <sys_id>8f1309424f4a3300a9c2224f9310c7c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Feb</sys_name>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
         <sys_policy/>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
-        <sys_update_name>sys_dictionary_x_172976_dsm_mvp_transistion_plan_header_plan_name</sys_update_name>
+        <sys_update_name>sys_dictionary_x_172976_dsm_mvp_transition_plan_calendar_feb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-16 12:01:50</sys_updated_on>
+        <sys_updated_on>2019-06-16 10:58:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
