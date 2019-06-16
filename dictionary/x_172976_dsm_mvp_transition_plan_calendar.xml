@@ -11,12 +11,20 @@
         <element default="0.0" label="Mar" max_length="20" name="mar" type="decimal"/>
         <element default="0.0" label="May" max_length="20" name="may" type="decimal"/>
         <element default="0.0" label="Nov" max_length="20" name="nov" type="decimal"/>
+        <element default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
         <element default="0.0" label="Oct" max_length="20" name="oct" type="decimal"/>
         <element default="0.0" label="Sept" max_length="20" name="sept" type="decimal"/>
         <element default="0.0" label="Total Cost" max_length="20" name="total_cost" type="decimal"/>
         <element default="0.0" label="Total Headcount" max_length="20" name="total_headcount" type="decimal"/>
         <element label="Transition plan details" max_length="32" name="transition_plan_details" reference="x_172976_dsm_mvp_transition_plan" type="reference"/>
-        <element default="2018" label="Year" max_length="40" name="year" type="string"/>
+        <element choice="1" default="2018" label="Year" max_length="40" name="year" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="2018" sequence="10" value="2018"/>
+                <element inactive_on_update="false" label="2019" sequence="20" value="2019"/>
+                <element inactive_on_update="false" label="2020" sequence="30" value="2020"/>
+                <element inactive_on_update="false" label="2021" sequence="40" value="2021"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="transition_plan_details"/>
         </index>
