@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Transition Plan Header" max_length="40" name="x_172976_dsm_mvp_transistion_plan_header" sizeclass="1" type="collection">
+    <element extends="task" label="Transition Plan Header" max_length="40" name="x_172976_dsm_mvp_transistion_plan_header" sizeclass="2" type="collection">
         <element label="Business Unit" max_length="32" name="business_unit" reference="business_unit" reference_qual="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" reference_qual_condition="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" type="reference"/>
         <element default="javascript:gs.nowDateTime();" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Plan Date" max_length="40" name="plan_date" type="glide_date" use_dynamic_default="true"/>
         <element default="{your Name} Draft Legato Transition Plan" display="true" label="Plan Name" max_length="100" name="plan_name" type="string"/>

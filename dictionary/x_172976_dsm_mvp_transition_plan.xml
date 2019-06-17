@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Transition Plan Details" max_length="40" name="x_172976_dsm_mvp_transition_plan" type="collection">
-        <element default="0.0" label="Average headcount" max_length="20" name="average_headcount" type="decimal"/>
+    <element extends="task" label="Transition Plan Details" max_length="40" name="x_172976_dsm_mvp_transition_plan" sizeclass="8" type="collection">
+        <element default="0.0" label="2018 Avg headcount" max_length="20" name="average_headcount" type="decimal"/>
+        <element default="0.0" label="2019 Avg headcount" max_length="20" name="average_headcount_2" type="decimal"/>
+        <element default="0.0" label="2020 Avg headcount" max_length="20" name="average_headcount_3" type="decimal"/>
+        <element default="0.0" label="2021 Avg headcount" max_length="20" name="average_headcount_4" type="decimal"/>
         <element label="Avg Cost Headcount hr" max_length="20" name="avg_cost_headcount_hr" type="currency"/>
         <element label="Budgeted" max_length="40" name="budgeted" type="boolean"/>
         <element label="Business Unit" max_length="32" name="business_unit" reference="business_unit" reference_qual="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" reference_qual_condition="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" type="reference"/>
@@ -17,7 +20,7 @@
             </choice>
         </element>
         <element label="Supplier" max_length="32" name="supplier" reference="core_company" type="reference"/>
-        <element label="Transition Plan Header" max_length="32" name="transition_plan_header" reference="x_172976_dsm_mvp_transistion_plan_header" type="reference"/>
+        <element label="Transition Plan Header" max_length="32" name="transition_plan_header" reference="x_172976_dsm_mvp_transistion_plan_header" reference_cascade_rule="cascade" type="reference"/>
         <element choice="1" label="Type of Work" max_length="40" name="type_of_work" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Core Business Initiative" sequence="0" value="Core Business Initiative"/>

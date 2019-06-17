@@ -28,13 +28,27 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
-	// Add your code here
+	
+	// Calculate the average hours
 	current.amount = (( current.jan +
-					  current.feb +
-					  current.mar
-	) / 3);
-
+	current.feb +
+	current.mar +
+	current.april +
+	current.may +
+	current.june +
+	current.july +
+	current.aug +
+	current.sept +
+	current.oct +
+	current.nov +
+	current.dec) / 12);
+	
+	// Store amount in the details record for the appropriate year
+	// Should rename the average headcount fields year1_headcount .. year2_headcount ..
+	
+	
+	
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -42,7 +56,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7d34b14e4fca3300a9c2224f9310c7ee</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Calculate Avg Headcount</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -50,7 +64,7 @@
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_script_7d34b14e4fca3300a9c2224f9310c7ee</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-16 15:00:49</sys_updated_on>
+        <sys_updated_on>2019-06-16 19:59:28</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
