@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2/>
+        <comments>Copy the plan detail and calendar breakdown data</comments>
+        <condition>current.plan_type == 2</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Copy Plan Details</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[copyPlanDetailsAndStay();
+function copyPlanDetailsAndStay() {
+	var saveMe = current;     //saveMe saves the transition plan ID  (not sure we need this)
+	var steadyStateID = current.related_plan;
+	var transitionPlanID = current.sys_id;
+	
+	copyPlanDetails(steadyStateID, transitionPlanID);
+	
+	action.setRedirectURL(saveMe);
+}
+
+function copyPlanDetails(steadyStateID, transitionPlanID) {
+	// Read the SteadyState plan detail records and create corresponding TransitionPlan details.
+	//
+	var detRec = new GlideRecord('x_172976_dsm_mvp_transition_plan');
+	detRec.addQuery('transition_plan_header', steadyStateID);
+	detRec.query();
+	while (detRec.next()) {
+		var detRecSave = detRec.sys_id;
+		// Copy the Steady State Detail Records
+		var detRecCopy = new GlideRecord('x_172976_dsm_mvp_transition_plan');
+		detRecCopy.initialize();
+		detRecCopy.average_headcount = detRec.average_headcount;
+		detRecCopy.average_headcount_2 = detRec.average_headcount_2;
+		detRecCopy.average_headcount_3 = detRec.average_headcount_3;
+		detRecCopy.average_headcount_4 = detRec.average_headcount_4;
+		detRecCopy.avg_cost_headcount_hr = detRec.avg_cost_headcount_hr;
+		detRecCopy.budgeted = detRec.budgeted;
+		detRecCopy.contract_id = detRec.contract_id;
+		detRecCopy.lo_cost_center = detRec.lo_cost_center;
+		detRecCopy.location = detRec.location;
+		detRecCopy.role = detRec.role;
+		detRecCopy.short_description = detRec.short_description;
+		detRecCopy.skill_category = detRec.skill_category;
+		detRecCopy.skills_required = detRec.skills_required;
+		detRecCopy.supplier = detRec.supplier;
+		detRecCopy.transition_plan_header = transitionPlanID;
+		detRecCopy.type_of_work = detRec.type_of_work;
+		//pass the original detail record and the created detail copy record in the transition pla
+		
+		detRecCopy.insert();
+		copyCalendarRecords(detRecSave, detRecCopy.sys_id);
+				
+	}	
+}
+
+function copyCalendarRecords(savedDetRecId,newSysID) {
+	// Copy the Steady State Detail Calendars
+	var calRec = new GlideRecord('x_172976_dsm_mvp_transition_plan_calendar');
+	calRec.addQuery('transition_plan_details', savedDetRecId);
+	calRec.query();
+	while (calRec.next()) {
+		calRecCopy = calRec;
+		calRecCopy.number = '';
+		calRecCopy.transition_plan_details = newSysID;
+		calRecCopy.insert();
+	}
+}
+]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-17 16:47:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1e0a135e4f823300a9c2224f9310c7b9</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Copy Plan Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+        <sys_update_name>sys_ui_action_1e0a135e4f823300a9c2224f9310c7b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-06-18 12:42:42</sys_updated_on>
+        <table>x_172976_dsm_mvp_transistion_plan_header</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>
