@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 172976 Dsm Mvp Transition Plan Calendar" max_length="40" name="u_imp_tmpl_x_172976_dsm_mvp_transition_plan_calendar" type="collection">
+        <element attributes="import_attribute_name=April" label="April" max_length="20" name="u_april" type="decimal"/>
+        <element attributes="import_attribute_name=Aug" label="Aug" max_length="20" name="u_aug" type="decimal"/>
+        <element attributes="import_attribute_name=Dec" label="Dec" max_length="20" name="u_dec" type="decimal"/>
+        <element attributes="import_attribute_name=Feb" label="Feb" max_length="20" name="u_feb" type="decimal"/>
+        <element attributes="import_attribute_name=Jan" label="Jan" max_length="20" name="u_jan" type="decimal"/>
+        <element attributes="import_attribute_name=July" label="July" max_length="20" name="u_july" type="decimal"/>
+        <element attributes="import_attribute_name=June" label="June" max_length="20" name="u_june" type="decimal"/>
+        <element attributes="import_attribute_name=Mar" label="Mar" max_length="20" name="u_mar" type="decimal"/>
+        <element attributes="import_attribute_name=May" label="May" max_length="20" name="u_may" type="decimal"/>
+        <element attributes="import_attribute_name=Nov" label="Nov" max_length="20" name="u_nov" type="decimal"/>
+        <element attributes="import_attribute_name=Oct" label="Oct" max_length="20" name="u_oct" type="decimal"/>
+        <element attributes="import_attribute_name=Sept" label="Sept" max_length="20" name="u_sept" type="decimal"/>
+        <element attributes="import_attribute_name=Transition plan details,edge_encryption_enabled=true" label="Transition plan details" max_length="32" name="u_transition_plan_details" type="string"/>
+        <element attributes="import_attribute_name=Year,edge_encryption_enabled=true" label="Year" max_length="40" name="u_year" type="string"/>
+    </element>
+</database>

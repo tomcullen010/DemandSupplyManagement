@@ -4,22 +4,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>u_imp_tmpl_x_172976_dsm_mvp_resource_role</name>
+        <name>u_imp_tmpl_x_172976_dsm_mvp_transition_plan_calendar</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-06-15 16:08:42</sys_created_on>
-        <sys_id>c89149f94f023300a9c2224f9310c733</sys_id>
+        <sys_created_on>2019-06-18 13:59:15</sys_created_on>
+        <sys_id>59b088ba4f4e3300a9c2224f9310c72e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>u_imp_tmpl_x_172976_dsm_mvp_resource_role</sys_name>
+        <sys_name>u_imp_tmpl_x_172976_dsm_mvp_transition_plan_calendar</sys_name>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
         <sys_policy/>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
-        <sys_update_name>ua_table_licensing_config_c89149f94f023300a9c2224f9310c733</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_59b088ba4f4e3300a9c2224f9310c72e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-15 16:08:42</sys_updated_on>
+        <sys_updated_on>2019-06-18 13:59:15</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>
