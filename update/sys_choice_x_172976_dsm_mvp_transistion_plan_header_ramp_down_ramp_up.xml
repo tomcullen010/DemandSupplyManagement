@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="ramp_down_ramp_up" table="x_172976_dsm_mvp_transistion_plan_header" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ramp_down_ramp_up</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GIC</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-22 13:07:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff3b90804f123300a9c2224f9310c722</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-22 13:07:37</sys_updated_on>
+            <value>GIC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ramp_down_ramp_up</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GIC-Onshore</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-22 13:07:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>333b90804f123300a9c2224f9310c725</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-22 13:07:37</sys_updated_on>
+            <value>GIC-Onshore</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>ramp_down_ramp_up</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transition</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-22 13:07:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f3b90804f123300a9c2224f9310c726</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-22 13:07:37</sys_updated_on>
+            <value>Transition</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>ramp_down_ramp_up</element>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-22 13:07:37</sys_created_on>
+            <sys_id>bb3b90804f123300a9c2224f9310c723</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ramp_down_ramp_up</sys_name>
+            <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+            <sys_update_name>sys_choice_x_172976_dsm_mvp_transistion_plan_header_ramp_down_ramp_up</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-22 13:07:37</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Legato TP1" max_length="40" name="x_172976_dsm_mvp_legato_tp1" type="collection">
+        <element attributes="import_attribute_name=AA,edge_encryption_enabled=true" label="AA" max_length="40" name="u_aa" type="string"/>
+        <element attributes="import_attribute_name=AB,edge_encryption_enabled=true" label="AB" max_length="40" name="u_ab" type="string"/>
+        <element attributes="import_attribute_name=AC,edge_encryption_enabled=true" label="AC" max_length="40" name="u_ac" type="string"/>
+        <element attributes="import_attribute_name=AD,edge_encryption_enabled=true" label="AD" max_length="40" name="u_ad" type="string"/>
+        <element attributes="import_attribute_name=AE,edge_encryption_enabled=true" label="AE" max_length="40" name="u_ae" type="string"/>
+        <element attributes="import_attribute_name=AF,edge_encryption_enabled=true" label="AF" max_length="40" name="u_af" type="string"/>
+        <element attributes="import_attribute_name=AG,edge_encryption_enabled=true" label="AG" max_length="40" name="u_ag" type="string"/>
+        <element attributes="import_attribute_name=AH,edge_encryption_enabled=true" label="AH" max_length="40" name="u_ah" type="string"/>
+        <element attributes="import_attribute_name=AI,edge_encryption_enabled=true" label="AI" max_length="40" name="u_ai" type="string"/>
+        <element attributes="import_attribute_name=AJ,edge_encryption_enabled=true" label="AJ" max_length="40" name="u_aj" type="string"/>
+        <element attributes="import_attribute_name=AK,edge_encryption_enabled=true" label="AK" max_length="40" name="u_ak" type="string"/>
+        <element attributes="import_attribute_name=AL,edge_encryption_enabled=true" label="AL" max_length="40" name="u_al" type="string"/>
+        <element attributes="import_attribute_name=AM,edge_encryption_enabled=true" label="AM" max_length="40" name="u_am" type="string"/>
+        <element attributes="import_attribute_name=AN,edge_encryption_enabled=true" label="AN" max_length="40" name="u_an" type="string"/>
+        <element attributes="import_attribute_name=AO,edge_encryption_enabled=true" label="AO" max_length="40" name="u_ao" type="string"/>
+        <element attributes="import_attribute_name=AP,edge_encryption_enabled=true" label="AP" max_length="40" name="u_ap" type="string"/>
+        <element attributes="import_attribute_name=AQ,edge_encryption_enabled=true" label="AQ" max_length="40" name="u_aq" type="string"/>
+        <element attributes="import_attribute_name=AR,edge_encryption_enabled=true" label="AR" max_length="40" name="u_ar" type="string"/>
+        <element attributes="import_attribute_name=Area/Process/&#10;Team to move&#10; to Captive,edge_encryption_enabled=true" label="Area/Process/&#10;Team to move&#10; to Captive" max_length="40" name="u_area_process_ve__to_captive" type="string"/>
+        <element attributes="import_attribute_name=AS,edge_encryption_enabled=true" label="AS" max_length="40" name="u_as" type="string"/>
+        <element attributes="import_attribute_name=AS IS STEADY STATE (if Legato was not happening),edge_encryption_enabled=true" label="AS IS STEADY STATE (if Legato was not happening)" max_length="40" name="u_as_is_steady_not_happening_" type="string"/>
+        <element attributes="import_attribute_name=AT,edge_encryption_enabled=true" label="AT" max_length="40" name="u_at" type="string"/>
+        <element attributes="import_attribute_name=AU,edge_encryption_enabled=true" label="AU" max_length="40" name="u_au" type="string"/>
+        <element attributes="import_attribute_name=AV,edge_encryption_enabled=true" label="AV" max_length="40" name="u_av" type="string"/>
+        <element attributes="import_attribute_name=Avg cost/&#10;headcount/&#10;hr (USD),edge_encryption_enabled=true" label="Avg cost/&#10;headcount/&#10;hr (USD)" max_length="40" name="u_avg_cost__he_ount__hr__usd_" type="string"/>
+        <element attributes="import_attribute_name=AW,edge_encryption_enabled=true" label="AW" max_length="40" name="u_aw" type="string"/>
+        <element attributes="import_attribute_name=AX,edge_encryption_enabled=true" label="AX" max_length="40" name="u_ax" type="string"/>
+        <element attributes="import_attribute_name=AY,edge_encryption_enabled=true" label="AY" max_length="40" name="u_ay" type="string"/>
+        <element attributes="import_attribute_name=AZ,edge_encryption_enabled=true" label="AZ" max_length="40" name="u_az" type="string"/>
+        <element attributes="import_attribute_name=B,edge_encryption_enabled=true" label="B" max_length="113" name="u_b" type="string"/>
+        <element attributes="import_attribute_name=BA,edge_encryption_enabled=true" label="BA" max_length="40" name="u_ba" type="string"/>
+        <element attributes="import_attribute_name=BB,edge_encryption_enabled=true" label="BB" max_length="40" name="u_bb" type="string"/>
+        <element attributes="import_attribute_name=BC,edge_encryption_enabled=true" label="BC" max_length="40" name="u_bc" type="string"/>
+        <element attributes="import_attribute_name=BD,edge_encryption_enabled=true" label="BD" max_length="40" name="u_bd" type="string"/>
+        <element attributes="import_attribute_name=BE,edge_encryption_enabled=true" label="BE" max_length="40" name="u_be" type="string"/>
+        <element attributes="import_attribute_name=BF,edge_encryption_enabled=true" label="BF" max_length="40" name="u_bf" type="string"/>
+        <element attributes="import_attribute_name=BG,edge_encryption_enabled=true" label="BG" max_length="40" name="u_bg" type="string"/>
+        <element attributes="import_attribute_name=BH,edge_encryption_enabled=true" label="BH" max_length="40" name="u_bh" type="string"/>
+        <element attributes="import_attribute_name=BI,edge_encryption_enabled=true" label="BI" max_length="40" name="u_bi" type="string"/>
+        <element attributes="import_attribute_name=BJ,edge_encryption_enabled=true" label="BJ" max_length="40" name="u_bj" type="string"/>
+        <element attributes="import_attribute_name=BK,edge_encryption_enabled=true" label="BK" max_length="40" name="u_bk" type="string"/>
+        <element attributes="import_attribute_name=BL,edge_encryption_enabled=true" label="BL" max_length="40" name="u_bl" type="string"/>
+        <element attributes="import_attribute_name=F,edge_encryption_enabled=true" label="F" max_length="40" name="u_f" type="string"/>
+        <element attributes="import_attribute_name=G,edge_encryption_enabled=true" label="G" max_length="40" name="u_g" type="string"/>
+        <element attributes="import_attribute_name=Initiative #,edge_encryption_enabled=true" label="Initiative #" max_length="40" name="u_initiative__" type="string"/>
+        <element attributes="import_attribute_name=K,edge_encryption_enabled=true" label="K" max_length="40" name="u_k" type="string"/>
+        <element attributes="import_attribute_name=L,edge_encryption_enabled=true" label="L" max_length="40" name="u_l" type="string"/>
+        <element attributes="import_attribute_name=LO Cost Center,edge_encryption_enabled=true" label="LO Cost Center" max_length="40" name="u_lo_cost_center" type="string"/>
+        <element attributes="import_attribute_name=M,edge_encryption_enabled=true" label="M" max_length="40" name="u_m" type="string"/>
+        <element attributes="import_attribute_name=N,edge_encryption_enabled=true" label="N" max_length="40" name="u_n" type="string"/>
+        <element attributes="import_attribute_name=O,edge_encryption_enabled=true" label="O" max_length="40" name="u_o" type="string"/>
+        <element attributes="import_attribute_name=P,edge_encryption_enabled=true" label="P" max_length="40" name="u_p" type="string"/>
+        <element attributes="import_attribute_name=Q,edge_encryption_enabled=true" label="Q" max_length="40" name="u_q" type="string"/>
+        <element attributes="import_attribute_name=R,edge_encryption_enabled=true" label="R" max_length="40" name="u_r" type="string"/>
+        <element attributes="import_attribute_name=Roles,edge_encryption_enabled=true" label="Roles" max_length="40" name="u_roles" type="string"/>
+        <element attributes="import_attribute_name=S,edge_encryption_enabled=true" label="S" max_length="40" name="u_s" type="string"/>
+        <element attributes="import_attribute_name=T,edge_encryption_enabled=true" label="T" max_length="40" name="u_t" type="string"/>
+        <element attributes="import_attribute_name=Type of Work,edge_encryption_enabled=true" label="Type of Work" max_length="40" name="u_type_of_work" type="string"/>
+        <element attributes="import_attribute_name=U,edge_encryption_enabled=true" label="U" max_length="40" name="u_u" type="string"/>
+        <element attributes="import_attribute_name=V,edge_encryption_enabled=true" label="V" max_length="40" name="u_v" type="string"/>
+        <element attributes="import_attribute_name=W,edge_encryption_enabled=true" label="W" max_length="40" name="u_w" type="string"/>
+        <element attributes="import_attribute_name=X,edge_encryption_enabled=true" label="X" max_length="40" name="u_x" type="string"/>
+        <element attributes="import_attribute_name=Y,edge_encryption_enabled=true" label="Y" max_length="40" name="u_y" type="string"/>
+        <element attributes="import_attribute_name=Z,edge_encryption_enabled=true" label="Z" max_length="40" name="u_z" type="string"/>
+    </element>
+</database>

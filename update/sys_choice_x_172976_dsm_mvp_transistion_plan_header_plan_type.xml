@@ -43,19 +43,57 @@
             <element>plan_type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>CAPTIVE RAMP UP</label>
+            <label>APP DEV VIEW</label>
             <language>en</language>
             <name>x_172976_dsm_mvp_transistion_plan_header</name>
             <sequence>30</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-23 13:25:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5fa869584fda3300a9c2224f9310c7e5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-23 13:25:21</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>plan_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OFFER TRACKER</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>40</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-23 13:25:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>88e8699c4f1a3300a9c2224f9310c73c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-23 13:25:41</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>plan_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CAPTIVE RAMP UP</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>50</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2019-06-15 15:32:36</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>cf49f0754f023300a9c2224f9310c71e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-15 15:32:36</sys_updated_on>
-            <value>3</value>
+            <sys_updated_on>2019-06-23 13:25:06</sys_updated_on>
+            <value>5</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>plan_type</element>
