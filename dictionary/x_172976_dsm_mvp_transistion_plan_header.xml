@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Transition Plan Header" max_length="40" name="x_172976_dsm_mvp_transistion_plan_header" sizeclass="4" type="collection">
-        <element label="Business Unit" mandatory="true" max_length="32" name="business_unit" reference="business_unit" reference_qual="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" reference_qual_condition="company=b1cd4acd4f023300a9c2224f9310c73b^EQ" type="reference"/>
+    <element extends="task" label="Transition Plan Header" max_length="40" name="x_172976_dsm_mvp_transistion_plan_header" sizeclass="1" type="collection">
+        <element label="Business Unit" mandatory="true" max_length="32" name="business_unit" reference="business_unit" reference_qual="company=fe872481dbdab780bcf880876896196e^EQ" reference_qual_condition="company=fe872481dbdab780bcf880876896196e^EQ" type="reference"/>
         <element default="javascript:gs.nowDateTime();" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Plan Date" mandatory="true" max_length="40" name="plan_date" type="glide_date" use_dynamic_default="true"/>
         <element default="{your Name} Draft Legato Transition Plan" display="true" label="Plan Name" mandatory="true" max_length="100" name="plan_name" type="string"/>
         <element choice="3" default="1" label="Plan Type" max_length="40" name="plan_type" type="integer">
@@ -29,5 +29,17 @@
         <element default="0" label="Total Onsite Cost" max_length="20" name="total_onsite_cost" type="currency"/>
         <element default="0" label="Total Onsite Headcount" max_length="40" name="total_onsite_headcount" type="integer"/>
         <element label="Tower" max_length="32" name="tower" reference="business_unit" reference_qual="company=b1cd4acd4f023300a9c2224f9310c73b^parentISEMPTY^EQ" reference_qual_condition="company=b1cd4acd4f023300a9c2224f9310c73b^parentISEMPTY^EQ" type="reference"/>
+        <index name="index">
+            <element name="related_plan"/>
+        </index>
+        <index name="index2">
+            <element name="business_unit"/>
+        </index>
+        <index name="index3">
+            <element name="point_of_contact"/>
+        </index>
+        <index name="index4">
+            <element name="tower"/>
+        </index>
     </element>
 </database>

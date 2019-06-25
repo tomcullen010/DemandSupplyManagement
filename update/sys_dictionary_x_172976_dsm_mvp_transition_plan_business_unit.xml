@@ -45,7 +45,7 @@
         <reference_floats>false</reference_floats>
         <reference_key/>
         <reference_qual>company=b1cd4acd4f023300a9c2224f9310c73b^EQ</reference_qual>
-        <reference_qual_condition table="business_unit">company=b1cd4acd4f023300a9c2224f9310c73b^EQ<item display_table="core_company" display_value="Anthem USA" endquery="false" field="company" goto="false" newquery="false" operator="=" or="false" value="b1cd4acd4f023300a9c2224f9310c73b"/>
+        <reference_qual_condition table="business_unit">company=b1cd4acd4f023300a9c2224f9310c73b^EQ<item endquery="false" field="company" goto="false" newquery="false" operator="=" or="false" value="b1cd4acd4f023300a9c2224f9310c73b"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <reference_type/>
@@ -55,15 +55,17 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-06-13 14:35:34</sys_created_on>
-        <sys_id>b7be332a4f4e3300a9c2224f9310c70d</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a3db1885db9ab780bcf880876896197a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Business Unit</sys_name>
+        <sys_name>x_172976_dsm_mvp_transition_plan</sys_name>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
         <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_dictionary_x_172976_dsm_mvp_transition_plan_business_unit</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-06-18 13:50:52</sys_updated_on>
+        <sys_updated_on>2019-06-25 15:44:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 172976 Dsm Mvp Transistion Plan Header" max_length="40" name="u_imp_tmpl_x_172976_dsm_mvp_transistion_plan_header" type="collection">
+        <element attributes="import_attribute_name=Business Unit,edge_encryption_enabled=true" label="Business Unit" max_length="32" name="u_business_unit" type="string"/>
+        <element attributes="import_attribute_name=Plan Date" label="Plan Date" max_length="40" name="u_plan_date" type="glide_date"/>
+        <element attributes="import_attribute_name=Plan Name,edge_encryption_enabled=true" label="Plan Name" max_length="100" name="u_plan_name" type="string"/>
+        <element attributes="import_attribute_name=Plan Type,edge_encryption_enabled=true" label="Plan Type" max_length="40" name="u_plan_type" type="string"/>
+        <element attributes="import_attribute_name=State,edge_encryption_enabled=true" label="State" max_length="40" name="u_state" type="string"/>
+    </element>
+</database>

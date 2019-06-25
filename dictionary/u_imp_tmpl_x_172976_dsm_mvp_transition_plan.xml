@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 172976 Dsm Mvp Transition Plan" max_length="40" name="u_imp_tmpl_x_172976_dsm_mvp_transition_plan" type="collection">
+        <element label="Avg Cost Headcount hr" max_length="15" name="u_avg_cost_headcount_hr" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Budgeted" max_length="40" name="u_budgeted" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Business Unit" max_length="40" name="u_business_unit" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contract ID" max_length="40" name="u_contract_id" type="string"/>
+        <element attributes="import_attribute_name=Hourly Rate" label="Hourly Rate" max_length="15" name="u_hourly_rate" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Location" max_length="40" name="u_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="LO Cost Center" max_length="40" name="u_lo_cost_center" type="string"/>
+        <element attributes="import_attribute_name=Number,edge_encryption_enabled=true" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="import_attribute_name=Role,edge_encryption_enabled=true" label="Role" max_length="32" name="u_role" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Skills Required" max_length="40" name="u_skills_required" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Skill Category" max_length="40" name="u_skill_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Supplier" max_length="40" name="u_supplier" type="string"/>
+        <element attributes="import_attribute_name=Type,edge_encryption_enabled=true" label="Type" max_length="40" name="u_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="WorkType Core Business" max_length="40" name="u_worktype_core_business" type="string"/>
+        <element label="WorkType Lights On" max_length="40" name="u_worktype_lights_on" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="WorkType New Enhancements" max_length="40" name="u_worktype_new_enhancements" type="string"/>
+        <element label="WorkType Transformation" max_length="40" name="u_worktype_transformation" type="integer"/>
+    </element>
+</database>

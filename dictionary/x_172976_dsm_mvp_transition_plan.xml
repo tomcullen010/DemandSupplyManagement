@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Transition Plan Details" max_length="40" name="x_172976_dsm_mvp_transition_plan" sizeclass="17" type="collection">
+    <element extends="task" label="Transition Plan Details" max_length="40" name="x_172976_dsm_mvp_transition_plan" sizeclass="21" type="collection">
         <element default="0.0" label="2018 Avg headcount" max_length="20" name="average_headcount" type="decimal"/>
         <element default="0.0" label="2019 Avg headcount" max_length="20" name="average_headcount_2" type="decimal"/>
         <element default="0.0" label="2020 Avg headcount" max_length="20" name="average_headcount_3" type="decimal"/>
@@ -59,5 +59,38 @@
         <element label="WorkType New Enhancements" max_length="40" name="worktype_new_enhancements" type="percent_complete"/>
         <element label="WorkType Transformation" max_length="40" name="worktype_transformation" type="percent_complete"/>
         <element label="Work Stream Leader" max_length="32" name="work_stream_leader" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="group_leader"/>
+        </index>
+        <index name="index2">
+            <element name="transition_plan_header"/>
+        </index>
+        <index name="index3">
+            <element name="role"/>
+        </index>
+        <index name="index4">
+            <element name="lo_cost_center"/>
+        </index>
+        <index name="index5">
+            <element name="tower_leader"/>
+        </index>
+        <index name="index6">
+            <element name="contract_id"/>
+        </index>
+        <index name="index7">
+            <element name="org_leader"/>
+        </index>
+        <index name="index8">
+            <element name="supplier"/>
+        </index>
+        <index name="index9">
+            <element name="gic_advisor"/>
+        </index>
+        <index name="index10">
+            <element name="work_stream_leader"/>
+        </index>
+        <index name="index11">
+            <element name="business_unit"/>
+        </index>
     </element>
 </database>
