@@ -1,115 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="plan_type" table="x_172976_dsm_mvp_transistion_plan_header" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_172976_dsm_mvp_transistion_plan_header" version="3">
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>plan_type</element>
+            <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>AS IS STEADY STATE</label>
+            <label>Pending</label>
             <language>en</language>
             <name>x_172976_dsm_mvp_transistion_plan_header</name>
-            <sequence>10</sequence>
+            <sequence>-5</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-15 15:31:21</sys_created_on>
+            <sys_created_on>2019-06-24 15:50:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>fec830b54f023300a9c2224f9310c736</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_id>ff931f204f923300a9c2224f9310c7f0</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-15 15:31:21</sys_updated_on>
+            <sys_updated_on>2019-06-24 15:53:45</sys_updated_on>
+            <value>-5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-06-24 15:53:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>23c35fa04f923300a9c2224f9310c73e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-06-24 15:54:00</sys_updated_on>
             <value>1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>plan_type</element>
+            <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>TRANSITION PLAN (CTS Roll Off)</label>
+            <label>Work in Progress</label>
             <language>en</language>
             <name>x_172976_dsm_mvp_transistion_plan_header</name>
-            <sequence>20</sequence>
+            <sequence>2</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-15 15:31:56</sys_created_on>
+            <sys_created_on>2019-06-24 15:54:02</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>6129b0354f023300a9c2224f9310c7d4</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_id>ad7417e04f923300a9c2224f9310c766</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-24 18:40:19</sys_updated_on>
+            <sys_updated_on>2019-06-24 15:54:16</sys_updated_on>
             <value>2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>plan_type</element>
+            <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>APP DEV VIEW</label>
+            <label>Closed Complete</label>
             <language>en</language>
             <name>x_172976_dsm_mvp_transistion_plan_header</name>
-            <sequence>30</sequence>
+            <sequence>3</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-23 13:25:16</sys_created_on>
+            <sys_created_on>2019-06-24 15:54:20</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>5fa869584fda3300a9c2224f9310c7e5</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_id>c98417e04f923300a9c2224f9310c713</sys_id>
+            <sys_mod_count>4</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-23 13:25:21</sys_updated_on>
+            <sys_updated_on>2019-06-24 15:55:05</sys_updated_on>
             <value>3</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>plan_type</element>
+            <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>OFFER TRACKER</label>
+            <label>Closed Incomplete</label>
             <language>en</language>
             <name>x_172976_dsm_mvp_transistion_plan_header</name>
-            <sequence>40</sequence>
+            <sequence>4</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-23 13:25:36</sys_created_on>
+            <sys_created_on>2019-06-24 15:54:48</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>88e8699c4f1a3300a9c2224f9310c73c</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_id>29941fa04f923300a9c2224f9310c74e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-23 13:25:41</sys_updated_on>
+            <sys_updated_on>2019-06-24 15:55:17</sys_updated_on>
             <value>4</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>plan_type</element>
+            <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>CAPTIVE RAMP UP (Legato Roll On)</label>
+            <label>Closed Skipped</label>
             <language>en</language>
             <name>x_172976_dsm_mvp_transistion_plan_header</name>
-            <sequence>50</sequence>
+            <sequence>5</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-15 15:32:36</sys_created_on>
+            <sys_created_on>2019-06-24 15:55:19</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>cf49f0754f023300a9c2224f9310c71e</sys_id>
+            <sys_id>58b457e04f923300a9c2224f9310c70a</sys_id>
             <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-24 18:40:03</sys_updated_on>
+            <sys_updated_on>2019-06-24 15:55:33</sys_updated_on>
             <value>5</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>plan_type</element>
+            <element>state</element>
             <name>x_172976_dsm_mvp_transistion_plan_header</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-06-15 15:31:21</sys_created_on>
-            <sys_id>9bce372a4f4e3300a9c2224f9310c7c1</sys_id>
+            <sys_created_on>2019-06-24 15:50:55</sys_created_on>
+            <sys_id>e7c39fa04f923300a9c2224f9310c723</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>plan_type</sys_name>
+            <sys_name>state</sys_name>
             <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
             <sys_policy/>
             <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
-            <sys_update_name>sys_choice_x_172976_dsm_mvp_transistion_plan_header_plan_type</sys_update_name>
+            <sys_update_name>sys_choice_x_172976_dsm_mvp_transistion_plan_header_state</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-15 15:31:21</sys_updated_on>
+            <sys_updated_on>2019-06-24 15:50:55</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

@@ -26,7 +26,8 @@
         <name>Update</name>
         <onclick/>
         <order>0</order>
-        <script><![CDATA[// Update the Detail record with yearly average headcounts
+        <script><![CDATA[current.update();
+// Update the Detail record with yearly average headcounts
 
 var txnD = new GlideRecord("x_172976_dsm_mvp_transition_plan");
 txnD.addQuery("sys_id", current.transition_plan_details.sys_id); //transition_plan_details
@@ -49,7 +50,7 @@ if (current.year == '2021') {
 txnD.update();
 
 // Now update the Calendar record
-current.update();]]></script>
+]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -60,7 +61,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>71b2cf0e4f8e3300a9c2224f9310c78e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Update</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -68,7 +69,7 @@ current.update();]]></script>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_ui_action_71b2cf0e4f8e3300a9c2224f9310c78e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-17 11:30:49</sys_updated_on>
+        <sys_updated_on>2019-06-25 12:42:19</sys_updated_on>
         <table>x_172976_dsm_mvp_transition_plan_calendar</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
