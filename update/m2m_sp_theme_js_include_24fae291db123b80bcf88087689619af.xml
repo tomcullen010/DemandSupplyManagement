@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_js_include">
+    <m2m_sp_theme_js_include action="INSERT_OR_UPDATE">
+        <order/>
+        <sp_js_include display_value="userInfoClientScriptHelper">447b0850db15e780ee5c24f4059619cc</sp_js_include>
+        <sp_theme display_value="Anthem - DSM Theme">1a3aa211db123b80bcf88087689619c1</sp_theme>
+        <sys_class_name>m2m_sp_theme_js_include</sys_class_name>
+        <sys_created_by>chris.stoll</sys_created_by>
+        <sys_created_on>2019-06-26 20:47:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>24fae291db123b80bcf88087689619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>userInfoClientScriptHelper.Anthem - DSM Theme</sys_name>
+        <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+        <sys_update_name>m2m_sp_theme_js_include_24fae291db123b80bcf88087689619af</sys_update_name>
+        <sys_updated_by>chris.stoll</sys_updated_by>
+        <sys_updated_on>2019-06-26 20:47:51</sys_updated_on>
+    </m2m_sp_theme_js_include>
+</record_update>

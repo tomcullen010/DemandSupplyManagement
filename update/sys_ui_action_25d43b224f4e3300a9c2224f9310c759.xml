@@ -26,19 +26,21 @@
         <name>Generate Transition Plan</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[doInsertAndStay();
+        <script><![CDATA[//new DemandSupplyUtils().doInsertAndStay(current);
+
+doInsertAndStay();
 
 function doInsertAndStay() {
-    var saveMe = current;
-    if (typeof current.number != 'undefined' && current.number)
-        current.number = ""; // generate a new number
+	var saveMe = current;
+	if (typeof current.number != 'undefined' && current.number)
+		current.number = ""; // generate a new number
 	//current.terms_and_conditions = "";
 	current.total_detail_count = 0;
 	current.plan_type = 2;  // Transition Plan
 	current.state = 1;
 	current.related_plan = saveMe.sys_id; //relate the Steady State and Transition Plans
-    current.insert();
-    action.setRedirectURL(saveMe);
+	current.insert();
+	action.setRedirectURL(saveMe);
 }
 ]]></script>
         <show_insert>false</show_insert>
@@ -52,7 +54,7 @@ function doInsertAndStay() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>25d43b224f4e3300a9c2224f9310c759</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Generate Transition Plan</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -60,8 +62,8 @@ function doInsertAndStay() {
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_ui_action_25d43b224f4e3300a9c2224f9310c759</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-24 18:35:22</sys_updated_on>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2019-06-28 12:53:09</sys_updated_on>
         <table>x_172976_dsm_mvp_transistion_plan_header</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

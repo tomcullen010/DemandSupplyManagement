@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description>Transition Planning Analysis</short_description>
+        <size>md</size>
+        <sp_column display_value="3">20155edddb9ef780bcf88087689619ce</sp_column>
+        <sp_widget display_value="ANT - DSM Actions list">1759de91dbdef780bcf880876896195b</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>chris.stoll</sys_created_by>
+        <sys_created_on>2019-06-26 19:12:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e8155edddb9ef780bcf88087689619cf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Research</sys_name>
+        <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+        <sys_update_name>sp_instance_e8155edddb9ef780bcf88087689619cf</sys_update_name>
+        <sys_updated_by>chris.stoll</sys_updated_by>
+        <sys_updated_on>2019-06-26 19:32:57</sys_updated_on>
+        <title>Research</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"title": {
+		"value": "Research",
+		"displayValue": "Research"
+	},
+	"short_description": {
+		"value": "Transition Planning Analysis",
+		"displayValue": "Transition Planning Analysis"
+	},
+	"actions": {
+		"value": "[   {     \"short_description\": \"Monthly Finance Variance Reports\",     \"title\": \"Variance Reporting\",     \"image\": \"sugest-knowledge.png\", \"url\": \"/dsm?id=ant_sc_home\"   } ]",
+		"displayValue": "[   {     \"short_description\": \"Monthly Finance Variance Reports\",     \"title\": \"Variance Reporting\",     \"image\": \"sugest-knowledge.png\", \"url\": \"/dsm?id=ant_sc_home\"   } ]"
+	},
+	"image": {
+		"value": "1b1809e8db8897408567fd7aae961947",
+		"displayValue": "research.png"
+	},
+	"url": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=e8155edddb9ef780bcf88087689619cf"/>
+</record_update>

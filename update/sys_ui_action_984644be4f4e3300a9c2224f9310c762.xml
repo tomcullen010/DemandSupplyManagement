@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name/>
+        <action_name>sysverb_insert_and_stay</action_name>
         <active>true</active>
         <client>false</client>
         <client_script_v2/>
@@ -26,8 +26,89 @@
         <name>Submit Transition Plan</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.state = 2;  //set to work in progress
-current.update();]]></script>
+        <script><![CDATA[//new DemandSupplyUtils().doInsertAndStay(current);
+
+doInsertAndStay();
+
+function doInsertAndStay() {
+	var saveMe = current;
+	if (typeof current.number != 'undefined' && current.number)
+		current.number = ""; // generate a new number
+	current.total_detail_count = 0;
+	current.plan_type = 3;  // App Dev View
+	current.state = 2;  //set to work in progress
+	current.related_plan = saveMe.sys_id; //relate the  Transition Plan and App Dev View
+	current.insert();
+	
+	copyPlanDetailsAndStay();
+	
+	action.setRedirectURL(saveMe);
+}
+
+
+function copyPlanDetailsAndStay() {
+	var saveMe = current;     //saveMe saves the transition plan ID  (not sure we need this)
+	var transitionPlanID = current.related_plan;
+	var AppDevPlanID = current.sys_id;
+	
+	copyPlanDetails(transitionPlanID, AppDevPlanID);
+	
+	current.state=1; // set Transistion Plan state = "Open
+	current.total_detail_count = 1; //tells ui action conditions detail records exist
+	current.update();
+	
+	action.setRedirectURL(saveMe);
+}
+
+function copyPlanDetails(steadyStateID, transitionPlanID) {
+	// Read the SteadyState plan detail records and create corresponding TransitionPlan details.
+	//
+	var detRec = new GlideRecord('x_172976_dsm_mvp_transition_plan');
+	detRec.addQuery('transition_plan_header', steadyStateID);
+	detRec.query();
+	while (detRec.next()) {
+		var detRecSave = detRec.sys_id;
+		// Copy the Steady State Detail Records
+		var detRecCopy = new GlideRecord('x_172976_dsm_mvp_transition_plan');
+		detRecCopy.initialize();
+		detRecCopy.average_headcount = detRec.average_headcount;
+		detRecCopy.average_headcount_2 = detRec.average_headcount_2;
+		detRecCopy.average_headcount_3 = detRec.average_headcount_3;
+		detRecCopy.average_headcount_4 = detRec.average_headcount_4;
+		detRecCopy.avg_cost_headcount_hr = detRec.avg_cost_headcount_hr;
+		detRecCopy.budgeted = detRec.budgeted;
+		detRecCopy.contract_id = detRec.contract_id;
+		detRecCopy.lo_cost_center = detRec.lo_cost_center;
+		detRecCopy.location = detRec.location;
+		detRecCopy.role = detRec.role;
+		detRecCopy.order = detRec.order;
+		detRecCopy.short_description = detRec.short_description;
+		detRecCopy.skill_category = detRec.skill_category;
+		detRecCopy.skills_required = detRec.skills_required;
+		detRecCopy.supplier = detRec.supplier;
+		detRecCopy.transition_plan_header = transitionPlanID;
+		detRecCopy.type_of_work = detRec.type_of_work;
+		//pass the original detail record and the created detail copy record in the transition pla
+		
+		detRecCopy.insert();
+		copyCalendarRecords(detRecSave, detRecCopy.sys_id);
+		
+	}
+}
+
+function copyCalendarRecords(savedDetRecId,newSysID) {
+	// Copy the Steady State Detail Calendars
+	var calRec = new GlideRecord('x_172976_dsm_mvp_transition_plan_calendar');
+	calRec.addQuery('transition_plan_details', savedDetRecId);
+	calRec.query();
+	while (calRec.next()) {
+		calRecCopy = calRec;
+		calRecCopy.number = '';
+		calRecCopy.transition_plan_details = newSysID;
+		calRecCopy.insert();
+	}
+}
+]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -39,7 +120,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>984644be4f4e3300a9c2224f9310c762</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Submit Transition Plan</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -47,8 +128,8 @@ current.update();]]></script>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_ui_action_984644be4f4e3300a9c2224f9310c762</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-25 12:53:03</sys_updated_on>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2019-07-01 12:55:54</sys_updated_on>
         <table>x_172976_dsm_mvp_transistion_plan_header</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

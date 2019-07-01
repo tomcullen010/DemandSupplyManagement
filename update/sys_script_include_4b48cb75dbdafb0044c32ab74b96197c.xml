@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_172976_dsm_mvp.DemandSupplyUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>DemandSupplyUtils</name>
+        <script><![CDATA[var DemandSupplyUtils = Class.create();
+DemandSupplyUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	doInsertAndStay: function (current) {
+		var saveMe = current;
+		if (typeof current.number != 'undefined' && current.number)
+			current.number = ""; // generate a new number
+		//current.terms_and_conditions = "";
+		current.total_detail_count = 0;
+		current.plan_type = 2;  // Transition Plan
+		current.state = 1;
+		current.related_plan = saveMe.sys_id; //relate the Steady State and Transition Plans
+		current.insert();
+		action.setRedirectURL(saveMe);
+	},
+	
+	type: 'DemandSupplyUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2019-06-28 12:13:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4b48cb75dbdafb0044c32ab74b96197c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>DemandSupplyUtils</sys_name>
+        <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+        <sys_update_name>sys_script_include_4b48cb75dbdafb0044c32ab74b96197c</sys_update_name>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2019-06-28 13:49:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

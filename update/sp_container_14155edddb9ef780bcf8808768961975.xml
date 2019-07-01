@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color>#bdc0c4</background_color>
+        <background_image>c5050190db8c57408567fd7aae96191b.iix?t=m</background_image>
+        <background_style>cover</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name>hidden-xs b-p-y-0</class_name>
+        <container_class_name>home-image temp-hide</container_class_name>
+        <name>DSM Index - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="dsm_index">1415d2dddb9ef780bcf88087689619ed</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>chris.stoll</sys_created_by>
+        <sys_created_on>2019-06-26 19:12:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>14155edddb9ef780bcf8808768961975</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>DSM Index - Container 1</sys_name>
+        <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+        <sys_update_name>sp_container_14155edddb9ef780bcf8808768961975</sys_update_name>
+        <sys_updated_by>chris.stoll</sys_updated_by>
+        <sys_updated_on>2019-06-26 19:14:34</sys_updated_on>
+        <title/>
+        <width>container-fluid</width>
+    </sp_container>
+</record_update>

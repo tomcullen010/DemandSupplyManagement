@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>$sp-logo-margin-x: 		15px !default;&#13;
+$sp-tagline-color:		$text-color !default;&#13;
+$navbar-inverse-bg: 	#3a3f51 !default;&#13;
+$navbar-inverse-link-color: #bdc0c4 !default;&#13;
+$navbar-inverse-link-hover-color: #ffffff !default;&#13;
+$body-bg: 				#f0f3f4 !default;&#13;
+$dropdown-link-disabled-color: #ccc;&#13;
+&#13;
+$grey-light: #E3E3E3;</css_variables>
+        <footer/>
+        <footer_fixed>false</footer_fixed>
+        <header display_value="ANT - Header - DSM Modified">27e9e69ddbdef780bcf88087689619a8</header>
+        <name>Anthem - DSM Theme</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>chris.stoll</sys_created_by>
+        <sys_created_on>2019-06-26 20:45:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1a3aa211db123b80bcf88087689619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Anthem - DSM Theme</sys_name>
+        <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+        <sys_update_name>sp_theme_1a3aa211db123b80bcf88087689619c1</sys_update_name>
+        <sys_updated_by>chris.stoll</sys_updated_by>
+        <sys_updated_on>2019-06-26 20:45:17</sys_updated_on>
+    </sp_theme>
+</record_update>
