@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Transition Plan Details" max_length="40" name="x_172976_dsm_mvp_transition_plan" sizeclass="44" type="collection">
+    <element extends="task" label="Transition Plan Details" max_length="40" name="x_172976_dsm_mvp_transition_plan" sizeclass="49" type="collection">
         <element default="0.0" label="2018 Avg headcount" max_length="20" name="average_headcount" type="decimal"/>
         <element default="0.0" label="2019 Avg headcount" max_length="20" name="average_headcount_2" type="decimal"/>
         <element default="0.0" label="2020 Avg headcount" max_length="20" name="average_headcount_3" type="decimal"/>
@@ -18,12 +18,15 @@
             </choice>
         </element>
         <element default="0.0" label="Final FTE Count" max_length="20" name="final_fte_count" type="decimal"/>
-        <element label="GIC Advisor" max_length="32" name="gic_advisor" reference="sys_user" type="reference"/>
+        <element label="GIC Advisor" max_length="32" name="gic_advisor2" reference="sys_user_grmember" reference_qual="group=5088c00fdb12334044c32ab74b9619bb^EQ" reference_qual_condition="group=5088c00fdb12334044c32ab74b9619bb^EQ" type="reference"/>
         <element label="Group Leader" max_length="32" name="group_leader" reference="sys_user" type="reference"/>
         <element label="ID" max_length="40" name="id" type="string"/>
         <element label="Initiative" max_length="40" name="initiative" type="string"/>
         <element choice="1" label="Laptop Type" max_length="40" name="laptop_type" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="Dev" sequence="0" value="Dev"/>
+                <element inactive_on_update="false" label="Normal" sequence="1" value="Normal"/>
+            </choice>
         </element>
         <element label="LO Cost Center" max_length="32" name="lo_cost_center" reference="cmn_cost_center" type="reference"/>
         <element label="Org Leader" max_length="32" name="org_leader" reference="sys_user" type="reference"/>
@@ -84,13 +87,13 @@
             <element name="supplier"/>
         </index>
         <index name="index9">
-            <element name="gic_advisor"/>
-        </index>
-        <index name="index10">
             <element name="work_stream_leader"/>
         </index>
-        <index name="index11">
+        <index name="index10">
             <element name="business_unit"/>
+        </index>
+        <index name="index11">
+            <element name="gic_advisor2"/>
         </index>
     </element>
 </database>

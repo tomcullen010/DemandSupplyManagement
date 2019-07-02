@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="laptop_type" table="x_172976_dsm_mvp_transition_plan" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>laptop_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Dev</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transition_plan</name>
+            <sequence>0</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-01 20:02:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a909c83db52334044c32ab74b9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-01 20:02:51</sys_updated_on>
+            <value>Dev</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>laptop_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Normal</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transition_plan</name>
+            <sequence>1</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-01 20:02:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9e909c83db52334044c32ab74b9619d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-01 20:02:51</sys_updated_on>
+            <value>Normal</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>laptop_type</element>
+            <name>x_172976_dsm_mvp_transition_plan</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-01 20:02:51</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>16909c83db52334044c32ab74b9619d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>laptop_type</sys_name>
+            <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+            <sys_update_name>sys_choice_x_172976_dsm_mvp_transition_plan_laptop_type</sys_update_name>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-01 20:02:51</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

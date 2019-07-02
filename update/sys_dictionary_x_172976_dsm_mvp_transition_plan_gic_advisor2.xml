@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="gic_advisor" table="x_172976_dsm_mvp_transition_plan">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="gic_advisor2" table="x_172976_dsm_mvp_transition_plan">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -27,7 +27,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>gic_advisor</element>
+        <element>gic_advisor2</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -40,30 +40,32 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference display_value="" name="sys_user_grmember">sys_user_grmember</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>group=5088c00fdb12334044c32ab74b9619bb^EQ</reference_qual>
+        <reference_qual_condition table="sys_user_grmember">group=5088c00fdb12334044c32ab74b9619bb^EQ<item display_table="sys_user_group" display_value="GIC SPOC" endquery="false" field="group" goto="false" newquery="false" operator="=" or="false" value="5088c00fdb12334044c32ab74b9619bb"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <reference_type/>
         <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-06-21 12:31:49</sys_created_on>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2019-07-01 19:55:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>abdb1885db9ab780bcf880876896197e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_id>2f2d80cfdb12334044c32ab74b961936</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>x_172976_dsm_mvp_transition_plan</sys_name>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
-        <sys_update_name>sys_dictionary_x_172976_dsm_mvp_transition_plan_gic_advisor</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-06-25 15:44:59</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_172976_dsm_mvp_transition_plan_gic_advisor2</sys_update_name>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2019-07-01 19:59:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
