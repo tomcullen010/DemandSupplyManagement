@@ -36,6 +36,7 @@ function doInsertAndStay() {
 		current.number = ""; // generate a new number
 	current.total_detail_count = 0;
 	current.plan_type = 3;  // App Dev View
+	current.order = 30;
 	current.state = 2;  //set to work in progress
 	current.related_plan = saveMe.sys_id; //relate the  Transition Plan and App Dev View
 	current.insert();
@@ -120,7 +121,7 @@ function copyCalendarRecords(savedDetRecId,newSysID) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>984644be4f4e3300a9c2224f9310c762</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Submit Transition Plan</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -129,7 +130,7 @@ function copyCalendarRecords(savedDetRecId,newSysID) {
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_ui_action_984644be4f4e3300a9c2224f9310c762</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2019-07-01 12:55:54</sys_updated_on>
+        <sys_updated_on>2019-07-02 18:16:03</sys_updated_on>
         <table>x_172976_dsm_mvp_transistion_plan_header</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

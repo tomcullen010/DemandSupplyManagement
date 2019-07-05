@@ -2,18 +2,30 @@
     <element label="Transition Plan Calendar" max_length="40" name="x_172976_dsm_mvp_transition_plan_calendar" type="collection">
         <element default="0" label="Average Headcount Amount" max_length="20" name="amount" type="decimal"/>
         <element default="0.0" label="April" max_length="20" name="april" type="decimal"/>
+        <element default="0" label="April cost" max_length="20" name="april_cost" type="currency"/>
         <element default="0.0" label="Aug" max_length="20" name="aug" type="decimal"/>
+        <element default="0" label="Aug cost" max_length="20" name="aug_cost" type="currency"/>
         <element default="0.0" label="Dec" max_length="20" name="dec" type="decimal"/>
+        <element default="0" label="Dec cost" max_length="20" name="dec_cost" type="currency"/>
         <element default="0.0" label="Feb" max_length="20" name="feb" type="decimal"/>
+        <element default="0" label="Feb cost" max_length="20" name="feb_cost" type="currency"/>
         <element default="0.0" label="Jan" max_length="20" name="jan" type="decimal"/>
+        <element default="0" label="Jan cost" max_length="20" name="jan_cost" type="currency"/>
         <element default="0.0" label="July" max_length="20" name="july" type="decimal"/>
+        <element default="0" label="July cost" max_length="20" name="july_cost" type="currency"/>
         <element default="0.0" label="June" max_length="20" name="june" type="decimal"/>
+        <element default="0" label="June cost" max_length="20" name="june_cost" type="currency"/>
         <element default="0.0" label="Mar" max_length="20" name="mar" type="decimal"/>
+        <element default="0" label="Mar cost" max_length="20" name="mar_cost" type="currency"/>
         <element default="0.0" label="May" max_length="20" name="may" type="decimal"/>
+        <element default="0" label="May cost" max_length="20" name="may_cost" type="currency"/>
         <element default="0.0" label="Nov" max_length="20" name="nov" type="decimal"/>
+        <element default="0" label="Nov cost" max_length="20" name="nov_cost" type="currency"/>
         <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
         <element default="0.0" label="Oct" max_length="20" name="oct" type="decimal"/>
+        <element default="0" label="Oct cost" max_length="20" name="oct_cost" type="currency"/>
         <element default="0.0" label="Sept" max_length="20" name="sept" type="decimal"/>
+        <element default="0" label="Sept cost" max_length="20" name="sept_cost" type="currency"/>
         <element default="0.0" label="Total Cost" max_length="20" name="total_cost" type="decimal"/>
         <element default="0.0" label="Total Headcount" max_length="20" name="total_headcount" type="decimal"/>
         <element label="Transition plan details" max_length="32" name="transition_plan_details" reference="x_172976_dsm_mvp_transition_plan" reference_cascade_rule="cascade" type="reference"/>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_172976_dsm_mvp.DemandSupplyUtils</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>DemandSupplyUtils</name>
+        <script><![CDATA[var DemandSupplyUtils = Class.create();
+DemandSupplyUtils.prototype = {
+	initialize: function() {
+	},
+	
+	calcHeadcountCost: function (current) {
+		
+		// Calculate the average hours
+		current.amount = (( current.jan + current.feb + current.mar + current.april + current.may + current.june + current.july +
+		current.aug + current.sept + current.oct + current.nov + current.dec) / 12);
+		
+		
+		// Store amount in the details record for the appropriate year
+		// Should rename the average headcount fields year1_headcount .. year2_headcount ..
+		
+		// calculate Monthly costs
+		var avg_cost = current.transition_plan_details.avg_cost_headcount_hr;
+		current.jan_cost = current.jan * avg_cost;
+		current.feb_cost = current.feb * avg_cost;
+		current.mar_cost = current.mar * avg_cost;
+		current.april_cost = current.april * avg_cost;
+		current.may_cost = current.may * avg_cost;
+		current.june_cost = current.june * avg_cost;
+		current.july_cost = current.july * avg_cost;
+		current.aug_cost = current.aug * avg_cost;
+		current.sept_cost = current.sept * avg_cost;
+		current.oct_cost = current.oct * avg_cost;
+		current.nov_cost = current.nov * avg_cost;
+		current.dec_cost = current.dec * avg_cost;
+		
+		//convert currency costs for "math"
+		current.total_cost = 0;
+		var jan_rate = parseFloat(current.jan_cost);
+		var feb_rate = parseFloat(current.feb_cost);
+		var mar_rate = parseFloat(current.mar_cost);
+		var april_rate = parseFloat(current.april_cost);
+		var may_rate = parseFloat(current.may_cost);
+		var june_rate = parseFloat(current.june_cost);
+		var july_rate = parseFloat(current.july_cost);
+		var aug_rate = parseFloat(current.aug_cost);
+		var sept_rate = parseFloat(current.sept_cost);
+		var oct_rate = parseFloat(current.oct_cost);
+		var nov_rate = parseFloat(current.nov_cost);
+		var dec_rate = parseFloat(current.dec_cost);
+		
+		current.total_cost = (jan_rate + feb_rate + mar_rate + april_rate + may_rate + june_rate + july_rate + aug_rate + sept_rate + oct_rate + nov_rate + dec_rate);
+		
+		
+		
+		gs.info('total cost = ' + current.total_cost);
+		
+	},
+	
+	
+	type: 'DemandSupplyUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2019-07-03 13:12:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1ba4052fdb5ab34044c32ab74b961906</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>DemandSupplyUtils</sys_name>
+        <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+        <sys_update_name>sys_script_include_1ba4052fdb5ab34044c32ab74b961906</sys_update_name>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2019-07-05 13:13:13</sys_updated_on>
+    </sys_script_include>
+</record_update>

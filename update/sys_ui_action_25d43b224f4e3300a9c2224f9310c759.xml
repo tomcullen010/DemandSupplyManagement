@@ -37,6 +37,7 @@ function doInsertAndStay() {
 	//current.terms_and_conditions = "";
 	current.total_detail_count = 0;
 	current.plan_type = 2;  // Transition Plan
+	current.order = 20;
 	current.state = 1;
 	current.related_plan = saveMe.sys_id; //relate the Steady State and Transition Plans
 	current.insert();
@@ -54,7 +55,7 @@ function doInsertAndStay() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>25d43b224f4e3300a9c2224f9310c759</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Generate Transition Plan</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -63,7 +64,7 @@ function doInsertAndStay() {
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_ui_action_25d43b224f4e3300a9c2224f9310c759</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2019-06-28 12:53:09</sys_updated_on>
+        <sys_updated_on>2019-07-02 18:15:30</sys_updated_on>
         <table>x_172976_dsm_mvp_transistion_plan_header</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -28,6 +28,7 @@
         <order>100</order>
         <script><![CDATA[action.setRedirectURL(current);
 current.state=1; //set state to Open
+current.order=10;
 current.insert();
 gs.include('ActionUtils');
 var au = new ActionUtils();
@@ -43,7 +44,7 @@ au.postInsert(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>14ea26284f123300a9c2224f9310c79b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Create Steady State Plan</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -51,8 +52,8 @@ au.postInsert(current);]]></script>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_ui_action_14ea26284f123300a9c2224f9310c79b</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-24 18:25:01</sys_updated_on>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2019-07-02 18:15:05</sys_updated_on>
         <table>x_172976_dsm_mvp_transistion_plan_header</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
