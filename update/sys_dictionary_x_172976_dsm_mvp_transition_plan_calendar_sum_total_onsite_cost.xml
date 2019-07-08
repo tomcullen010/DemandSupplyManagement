@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" extends="task" table="x_172976_dsm_mvp_transition_plan">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="sum_total_onsite_cost" table="x_172976_dsm_mvp_transition_plan_calendar">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -14,10 +14,10 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label/>
+        <column_label>Sum total onsite cost</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>0</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -27,15 +27,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element/>
+        <element>sum_total_onsite_cost</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="Currency">currency</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_172976_dsm_mvp_transition_plan</name>
+        <max_length>20</max_length>
+        <name>x_172976_dsm_mvp_transition_plan_calendar</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -47,23 +47,23 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass>68</sizeclass>
+        <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-06-13 13:43:47</sys_created_on>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2019-07-07 13:31:46</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>57db1885db9ab780bcf880876896196d</sys_id>
+        <sys_id>ea403d78db2ef74044c32ab74b96190f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_172976_dsm_mvp_transition_plan</sys_name>
+        <sys_name>x_172976_dsm_mvp_transition_plan_calendar</sys_name>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
-        <sys_update_name>sys_dictionary_x_172976_dsm_mvp_transition_plan_NULL</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-06-25 15:45:00</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_172976_dsm_mvp_transition_plan_calendar_sum_total_onsite_cost</sys_update_name>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2019-07-07 13:31:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

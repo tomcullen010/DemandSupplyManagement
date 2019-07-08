@@ -4,7 +4,7 @@
         <active>true</active>
         <client>false</client>
         <client_script_v2/>
-        <comments>Saves a new record and updates the Plan Details</comments>
+        <comments>Saves a new record and updates the Plan Calendar</comments>
         <condition>current.canCreate()</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
@@ -26,7 +26,11 @@
         <name>Submit</name>
         <onclick/>
         <order>2</order>
-        <script><![CDATA[//Create the Calendar record
+        <script><![CDATA[
+// Store the plan header id on the calendar record (will use this for plan level summaries)
+current.transition_plan_header = current.transition_plan_details.transition_plan_header;
+
+//Create the Calendar record
 answer = current.insert();
 //gs.include('ActionUtils');
 //var au = new ActionUtils();
@@ -63,7 +67,7 @@ txnD.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>91fd9e9e4f023300a9c2224f9310c7a6</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Submit</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -71,8 +75,8 @@ txnD.update();]]></script>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_ui_action_91fd9e9e4f023300a9c2224f9310c7a6</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-17 12:31:21</sys_updated_on>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2019-07-08 13:33:10</sys_updated_on>
         <table>x_172976_dsm_mvp_transition_plan_calendar</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

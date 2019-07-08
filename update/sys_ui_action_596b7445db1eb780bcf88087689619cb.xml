@@ -31,7 +31,10 @@ function doInsertAndStay() {
 	var saveMe = current;
 	if (typeof current.number != 'undefined' && current.number)
 		current.number = ""; // generate a new number
-	//current.terms_and_conditions = "";
+	
+	// Store the plan header id on the calendar record (will use this for plan level summaries)
+	current.transition_plan_header = current.transition_plan_details.transition_plan_header;
+	
 	current.order = current.order + 10;
 	current.insert();
 	
@@ -70,7 +73,7 @@ function doInsertAndStay() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>596b7445db1eb780bcf88087689619cb</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Insert and Stay</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -79,7 +82,7 @@ function doInsertAndStay() {
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_ui_action_596b7445db1eb780bcf88087689619cb</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2019-06-25 19:08:21</sys_updated_on>
+        <sys_updated_on>2019-07-08 13:30:35</sys_updated_on>
         <table>x_172976_dsm_mvp_transition_plan_calendar</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

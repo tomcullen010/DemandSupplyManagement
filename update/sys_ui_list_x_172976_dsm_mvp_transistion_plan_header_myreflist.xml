@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_172976_dsm_mvp_transistion_plan_header" version="2" view="myreflist">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_172976_dsm_mvp_transistion_plan_header" element="NULL" name="x_172976_dsm_mvp_transistion_plan_header" parent="NULL" relationship="NULL" sys_domain="global" view="841ff201db227b4044c32ab74b961964">484fbe01db227b4044c32ab74b96192e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-08 13:53:46</sys_created_on>
+            <sys_id>804fbe01db227b4044c32ab74b96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 13:53:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>plan_name</element>
+            <list_id display_value="x_172976_dsm_mvp_transistion_plan_header" element="NULL" name="x_172976_dsm_mvp_transistion_plan_header" parent="NULL" relationship="NULL" sys_domain="global" view="841ff201db227b4044c32ab74b961964">484fbe01db227b4044c32ab74b96192e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-08 13:53:46</sys_created_on>
+            <sys_id>044fbe01db227b4044c32ab74b96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 13:53:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="x_172976_dsm_mvp_transistion_plan_header" element="NULL" name="x_172976_dsm_mvp_transistion_plan_header" parent="NULL" relationship="NULL" sys_domain="global" view="841ff201db227b4044c32ab74b961964">484fbe01db227b4044c32ab74b96192e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-08 13:53:46</sys_created_on>
+            <sys_id>844fbe01db227b4044c32ab74b96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 13:53:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assignment_group</element>
+            <list_id display_value="x_172976_dsm_mvp_transistion_plan_header" element="NULL" name="x_172976_dsm_mvp_transistion_plan_header" parent="NULL" relationship="NULL" sys_domain="global" view="841ff201db227b4044c32ab74b961964">484fbe01db227b4044c32ab74b96192e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-08 13:53:46</sys_created_on>
+            <sys_id>084fbe01db227b4044c32ab74b96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 13:53:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="x_172976_dsm_mvp_transistion_plan_header" element="NULL" name="x_172976_dsm_mvp_transistion_plan_header" parent="NULL" relationship="NULL" sys_domain="global" view="841ff201db227b4044c32ab74b961964">484fbe01db227b4044c32ab74b96192e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-08 13:53:46</sys_created_on>
+            <sys_id>884fbe01db227b4044c32ab74b96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 13:53:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_class_name</element>
+            <list_id display_value="x_172976_dsm_mvp_transistion_plan_header" element="NULL" name="x_172976_dsm_mvp_transistion_plan_header" parent="NULL" relationship="NULL" sys_domain="global" view="841ff201db227b4044c32ab74b961964">484fbe01db227b4044c32ab74b96192e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-08 13:53:46</sys_created_on>
+            <sys_id>0c4fbe01db227b4044c32ab74b96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 13:53:46</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-08 13:53:46</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>484fbe01db227b4044c32ab74b96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_172976_dsm_mvp_transistion_plan_header</sys_name>
+            <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+            <sys_update_name>sys_ui_list_x_172976_dsm_mvp_transistion_plan_header_myreflist</sys_update_name>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 13:53:46</sys_updated_on>
+            <sys_user/>
+            <view display_value="myRefList" name="myreflist">841ff201db227b4044c32ab74b961964</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

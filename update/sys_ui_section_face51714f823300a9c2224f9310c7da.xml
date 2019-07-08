@@ -4,13 +4,13 @@
             <element>transition_plan_details.transition_plan_header.plan_name</element>
             <position>0</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2019-07-03 12:41:18</sys_created_on>
-            <sys_id>e1beb4a3db5ab34044c32ab74b961951</sys_id>
+            <sys_created_on>2019-07-05 13:34:55</sys_created_on>
+            <sys_id>ea2e9fc0db66774044c32ab74b96194b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2019-07-03 12:41:18</sys_updated_on>
+            <sys_updated_on>2019-07-05 13:34:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,55 +18,209 @@
             <element>year</element>
             <position>1</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2019-07-03 12:41:18</sys_created_on>
-            <sys_id>65beb4a3db5ab34044c32ab74b961951</sys_id>
+            <sys_created_on>2019-07-05 13:34:55</sys_created_on>
+            <sys_id>622e9fc0db66774044c32ab74b96194c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2019-07-03 12:41:18</sys_updated_on>
+            <sys_updated_on>2019-07-05 13:34:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>transition_plan_details.role.type</element>
+            <position>2</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-05 13:34:55</sys_created_on>
+            <sys_id>e22e9fc0db66774044c32ab74b96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-05 13:34:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2019-07-03 12:41:18</sys_created_on>
-            <sys_id>e5beb4a3db5ab34044c32ab74b961951</sys_id>
+            <sys_created_on>2019-07-05 13:34:55</sys_created_on>
+            <sys_id>662e9fc0db66774044c32ab74b96194c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2019-07-03 12:41:18</sys_updated_on>
+            <sys_updated_on>2019-07-05 13:34:55</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>transition_plan_details.transition_plan_header.plan_type</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2019-07-03 12:41:18</sys_created_on>
-            <sys_id>69beb4a3db5ab34044c32ab74b961951</sys_id>
+            <sys_created_on>2019-07-05 13:34:55</sys_created_on>
+            <sys_id>e62e9fc0db66774044c32ab74b96194c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2019-07-03 12:41:18</sys_updated_on>
+            <sys_updated_on>2019-07-05 13:34:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>transition_plan_details.role</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>tom.cullen</sys_created_by>
-            <sys_created_on>2019-07-03 12:41:18</sys_created_on>
-            <sys_id>e9beb4a3db5ab34044c32ab74b961951</sys_id>
+            <sys_created_on>2019-07-05 13:34:55</sys_created_on>
+            <sys_id>6a2e9fc0db66774044c32ab74b96194c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
             <sys_updated_by>tom.cullen</sys_updated_by>
-            <sys_updated_on>2019-07-03 12:41:18</sys_updated_on>
+            <sys_updated_on>2019-07-05 13:34:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>transition_plan_details.avg_cost_headcount_hr</element>
+            <position>6</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-05 13:34:55</sys_created_on>
+            <sys_id>ea2e9fc0db66774044c32ab74b96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-05 13:34:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>record_type</element>
+            <position>7</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-05 13:41:08</sys_created_on>
+            <sys_id>299f9bc0db66774044c32ab74b961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-05 13:41:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>summary_type</element>
+            <position>8</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-05 13:41:08</sys_created_on>
+            <sys_id>219f1744db66774044c32ab74b9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-05 13:41:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>transition_plan_header</element>
+            <position>9</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-07 13:03:50</sys_created_on>
+            <sys_id>a63ae13cdbeaf74044c32ab74b9619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-07 13:03:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sum_total_onsite_headcount</element>
+            <position>10</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-07 13:31:46</sys_created_on>
+            <sys_id>779071b8db2ef74044c32ab74b961977</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-07 13:31:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sum_total_offshore_headcount</element>
+            <position>11</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-07 13:31:46</sys_created_on>
+            <sys_id>379071b8db2ef74044c32ab74b96198c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-07 13:31:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sum_total_headcount</element>
+            <position>12</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-07 13:31:46</sys_created_on>
+            <sys_id>7b9071b8db2ef74044c32ab74b961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-07 13:31:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sum_total_onsite_cost</element>
+            <position>13</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-07 13:31:46</sys_created_on>
+            <sys_id>c4a071b8db2ef74044c32ab74b9619a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-07 13:31:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sum_total_offshore_cost</element>
+            <position>14</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-07 13:31:47</sys_created_on>
+            <sys_id>40a071b8db2ef74044c32ab74b9619b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-07 13:31:47</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sum_total_cost</element>
+            <position>15</position>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-07 13:31:47</sys_created_on>
+            <sys_id>0ca071b8db2ef74044c32ab74b9619ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_172976_dsm_mvp_transition_plan_calendar" sys_domain="global" view="Default view">face51714f823300a9c2224f9310c7da</sys_ui_section>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-07 13:31:47</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

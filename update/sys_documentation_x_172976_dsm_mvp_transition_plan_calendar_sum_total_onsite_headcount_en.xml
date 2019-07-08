@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="sum_total_onsite_headcount" label="Sum total onsite headcount" language="en" table="x_172976_dsm_mvp_transition_plan_calendar">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>sum_total_onsite_headcount</element>
+            <help/>
+            <hint/>
+            <label>Sum total onsite headcount</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transition_plan_calendar</name>
+            <plural>Sum total onsite headcounts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-07 13:31:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>80a071b8db2ef74044c32ab74b9619cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Sum total onsite headcount</sys_name>
+            <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+            <sys_update_name>sys_documentation_x_172976_dsm_mvp_transition_plan_calendar_sum_total_onsite_headcount_en</sys_update_name>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-07 13:31:47</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

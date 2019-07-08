@@ -6,9 +6,10 @@
         <element display="true" label="Role" max_length="200" name="role" type="string"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Onshore" sequence="10" value="onshore"/>
-                <element inactive_on_update="false" label="Offshore" sequence="20" value="offshore"/>
-                <element inactive_on_update="false" label="Other" sequence="30" value="other"/>
+                <element inactive_on_update="false" label="Onshore" sequence="0" value="onshore"/>
+                <element inactive_on_update="false" label="Offshore" sequence="1" value="offshore"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="other"/>
+                <element inactive_on_update="false" label="Totals" sequence="3" value="Totals"/>
             </choice>
         </element>
     </element>

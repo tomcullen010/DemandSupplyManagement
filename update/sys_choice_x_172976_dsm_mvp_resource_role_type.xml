@@ -8,15 +8,15 @@
             <label>Onshore</label>
             <language>en</language>
             <name>x_172976_dsm_mvp_resource_role</name>
-            <sequence>10</sequence>
+            <sequence>0</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2019-06-15 16:12:33</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>8e52813d4f023300a9c2224f9310c7eb</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-15 16:13:44</sys_updated_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 16:20:11</sys_updated_on>
             <value>onshore</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -27,15 +27,15 @@
             <label>Offshore</label>
             <language>en</language>
             <name>x_172976_dsm_mvp_resource_role</name>
-            <sequence>20</sequence>
+            <sequence>1</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2019-06-15 16:14:31</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>dc72c13d4f023300a9c2224f9310c7be</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-15 16:14:37</sys_updated_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 16:20:11</sys_updated_on>
             <value>offshore</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -46,16 +46,35 @@
             <label>Other</label>
             <language>en</language>
             <name>x_172976_dsm_mvp_resource_role</name>
-            <sequence>30</sequence>
+            <sequence>2</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2019-06-15 16:14:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>1de2c13d4f023300a9c2224f9310c7cc</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-06-15 16:15:01</sys_updated_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 16:20:11</sys_updated_on>
             <value>other</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Totals</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_resource_role</name>
+            <sequence>3</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-08 16:20:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3cc0274ddb627b4044c32ab74b961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-08 16:20:11</sys_updated_on>
+            <value>Totals</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>type</element>

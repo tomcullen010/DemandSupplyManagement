@@ -24,11 +24,34 @@
         <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
         <element default="0.0" label="Oct" max_length="20" name="oct" type="decimal"/>
         <element default="0" label="Oct cost" max_length="20" name="oct_cost" type="currency"/>
+        <element choice="1" default="1" label="Record type" max_length="40" name="record_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Detail" value="1"/>
+                <element inactive_on_update="false" label="Summary" value="2"/>
+            </choice>
+        </element>
         <element default="0.0" label="Sept" max_length="20" name="sept" type="decimal"/>
         <element default="0" label="Sept cost" max_length="20" name="sept_cost" type="currency"/>
+        <element choice="1" default="0" label="Summary type" max_length="40" name="summary_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Total cost" value="6"/>
+                <element inactive_on_update="false" label="Total headcount" value="3"/>
+                <element inactive_on_update="false" label="Total offshore cost" value="5"/>
+                <element inactive_on_update="false" label="Total offshore headcount" value="2"/>
+                <element inactive_on_update="false" label="Total onsite cost" value="4"/>
+                <element inactive_on_update="false" label="Total onsite headcount" value="1"/>
+            </choice>
+        </element>
+        <element default="0" label="Sum total cost" max_length="20" name="sum_total_cost" type="currency"/>
+        <element default="0" label="sum total headcount" max_length="20" name="sum_total_headcount" type="decimal"/>
+        <element default="0" label="Sum total offshore cost" max_length="20" name="sum_total_offshore_cost" type="currency"/>
+        <element default="0" label="Sum total offshore headcount" max_length="20" name="sum_total_offshore_headcount" type="decimal"/>
+        <element default="0" label="Sum total onsite cost" max_length="20" name="sum_total_onsite_cost" type="currency"/>
+        <element default="0" label="Sum total onsite headcount" max_length="20" name="sum_total_onsite_headcount" type="decimal"/>
         <element default="0.0" label="Total Cost" max_length="20" name="total_cost" type="decimal"/>
         <element default="0.0" label="Total Headcount" max_length="20" name="total_headcount" type="decimal"/>
         <element label="Transition plan details" max_length="32" name="transition_plan_details" reference="x_172976_dsm_mvp_transition_plan" reference_cascade_rule="cascade" type="reference"/>
+        <element label="Transition plan header" max_length="32" name="transition_plan_header" reference="x_172976_dsm_mvp_transistion_plan_header" type="reference"/>
         <element choice="1" default="2018" display="true" label="Year" max_length="40" name="year" type="choice">
             <choice>
                 <element inactive_on_update="false" label="2018" sequence="10" value="2018"/>
@@ -38,6 +61,9 @@
             </choice>
         </element>
         <index name="index">
+            <element name="transition_plan_header"/>
+        </index>
+        <index name="index2">
             <element name="transition_plan_details"/>
         </index>
     </element>
