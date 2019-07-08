@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Transition Plan Details" max_length="40" name="x_172976_dsm_mvp_transition_plan" sizeclass="68" type="collection">
+    <element extends="task" label="Transition Plan Details" max_length="40" name="x_172976_dsm_mvp_transition_plan" sizeclass="71" type="collection">
         <element default="0.0" label="2018 Avg headcount" max_length="20" name="average_headcount" type="decimal"/>
         <element default="0.0" label="2019 Avg headcount" max_length="20" name="average_headcount_2" type="decimal"/>
         <element default="0.0" label="2020 Avg headcount" max_length="20" name="average_headcount_3" type="decimal"/>

@@ -53,11 +53,129 @@ DemandSupplyUtils.prototype = {
 		
 		current.total_cost = (jan_rate + feb_rate + mar_rate + april_rate + may_rate + june_rate + july_rate + aug_rate + sept_rate + oct_rate + nov_rate + dec_rate);
 		
-		
-		
 		gs.info('total cost = ' + current.total_cost);
 		
 	},
+	
+	calcPlanTotals: function (current) {
+		
+		//create empty summary records. 1 for each year that has data
+		createNewSummaryRecs(current.sys_id);
+		
+		//loop through each Role/detail calendar entries to produce totals by year/month
+		//make sure not to include the Totals themselves!
+		var queryString = "transition_plan_header=" + current.sys_id + "^role.role!=Totals";
+		var dtl = new GlideRecord("x_172976_dsm_mvp_transition_plan");
+		dtl.addEncodedQuery(queryString);
+		dtl.orderBy("order");
+		dtl.query();
+		while (dtl.next()) {
+			gs.info(dtl.role.getDisplayValue());
+			sumCalendarAmts(dtl.sys_id);
+			
+		}
+		
+		
+		
+		//Delete any Totals records (if they exist)
+		//Create a new Totals detail
+		function createNewSummaryRecs(planId) {
+			gs.info('in createNewSummaryRecs ' + planId);
+			
+			deleteTotalsRec(planId);
+			
+			var newTotalsId = createTotalsRec(planId);
+			
+			//create a summary calendar record for each year
+			var calSum = new GlideRecord("x_172976_dsm_mvp_transition_plan_calendar");
+			calSum.addQuery("transition_plan_header", planId);
+			calSum.orderBy("year");
+			calSum.query();
+			//create a year list array
+			var yearList = [];
+			while (calSum.next()) {
+				gs.info('calSum.year = ' + calSum.year);
+				yearList.push(calSum.year.toString());
+			}
+			//remove duplicates
+			var arrayUtil = new global.ArrayUtil();
+			yearList = arrayUtil.unique(yearList);
+			
+			//Create summary recs
+			gs.info(yearList.length);
+			for (var i = 0; i< yearList.length; i++) {
+				gs.info(yearList[i]);
+				calSum.initialize();
+				calSum.year = yearList[i];
+				calSum.record_type = 2;
+				calSum.transition_plan_details = newTotalsId;
+				calSum.insert();
+				gs.info('calSum.transition_plan_header_details = ' + newTotalsId);
+				gs.info('calendar year = ' + calSum.year + ' - created');
+			}
+		}
+		
+		
+		
+		function deleteTotalsRec(planId) {
+			var queryString = "transition_plan_header=" + planId + "^role.role=Totals";
+			var delSum = new GlideRecord("x_172976_dsm_mvp_transition_plan");
+			delSum.addEncodedQuery(queryString);
+			delSum.query();
+			while (delSum.next()) {
+				delSum.deleteRecord();
+				gs.info('Totals Detail deleted');
+			}
+			
+		}
+		
+		
+		function createTotalsRec(planId) {
+			var newSum = new GlideRecord("x_172976_dsm_mvp_transition_plan");
+			newSum.initialize();
+			newSum.transition_plan_header = planId;
+			newSum.role = "fcc0a78ddb627b4044c32ab74b961914";  //Totals
+			newSum.order = 999;
+			newSum.insert();
+			gs.info('New Totals Detail created');
+			
+			return newSum.sys_id;
+			
+		}
+		
+		function sumCalendarAmts(dtlID) {
+			var cal = new GlideRecord("x_172976_dsm_mvp_transition_plan_calendar");
+			cal.addQuery("transition_plan_details", dtlID);
+			cal.orderBy("year");
+			cal.query();
+			while (cal.next()) {
+				gs.info('calendar year = ' + cal.year);
+				var yearTotal = getYearTotalRec(cal.year);
+				//addCalToTotals(cal.sys_id, yearTotalId);
+				addCalToTotals(cal, yearTotal);
+			}
+			
+		}
+		
+		function getYearTotalRec(cal_year) {
+			var queryString = "transition_plan_details.role.type=Totals^year=" + cal_year;
+			var totalCal = new GlideRecord("x_172976_dsm_mvp_transition_plan_calendar");
+			totalCal.addEncodedQuery(queryString);
+			totalCal.setLimit(1);
+			totalCal.query();
+			totalCal.next();
+			return totalCal;
+			//return totalCal.sys_id;
+		}
+		
+		function addCalToTotals(detail, total) {
+			gs.info('detail = ' + detail);
+			gs.info('total = ' + total);
+		}
+			
+
+	},
+	
 	
 	
 	type: 'DemandSupplyUtils'
@@ -67,7 +185,7 @@ DemandSupplyUtils.prototype = {
         <sys_created_on>2019-07-03 13:12:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1ba4052fdb5ab34044c32ab74b961906</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>DemandSupplyUtils</sys_name>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
         <sys_policy>read</sys_policy>
@@ -75,6 +193,6 @@ DemandSupplyUtils.prototype = {
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_script_include_1ba4052fdb5ab34044c32ab74b961906</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2019-07-05 13:13:13</sys_updated_on>
+        <sys_updated_on>2019-07-08 20:10:39</sys_updated_on>
     </sys_script_include>
 </record_update>
