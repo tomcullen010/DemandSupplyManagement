@@ -62,18 +62,29 @@ DemandSupplyUtils.prototype = {
 		//create empty summary records. 1 for each year that has data
 		createNewSummaryRecs(current.sys_id);
 		
-		//loop through each Role/detail calendar entries to produce totals by year/month
+		//loop through each calendar entry to produce totals by year/month
 		//make sure not to include the Totals themselves!
-		var queryString = "transition_plan_header=" + current.sys_id + "^role.role!=Totals";
-		var dtl = new GlideRecord("x_172976_dsm_mvp_transition_plan");
-		dtl.addEncodedQuery(queryString);
-		dtl.orderBy("order");
-		dtl.query();
-		while (dtl.next()) {
-			gs.info(dtl.role.getDisplayValue());
-			sumCalendarAmts(dtl.sys_id);
-			
+		var saveYear = '0000';
+		var yearTotal;
+		var queryString = "transition_plan_details.transition_plan_header.sys_id=" + current.sys_id + "^record_type!=2";
+		var cal = new GlideRecord("x_172976_dsm_mvp_transition_plan_calendar");
+		cal.addEncodedQuery(queryString);
+		cal.orderBy("year");
+		cal.query();
+		while (cal.next()) {
+			gs.info('calendar year = ' + cal.year);
+			if (cal.year != saveYear) {
+				if (saveYear !== '0000') {
+					yearTotal.update();   //after the first pass .. update on a change of year
+				}
+				yearTotal = getYearTotalRec(cal.year);
+				saveYear = yearTotal.year;
+			}
+			addCalToTotals(cal, yearTotal);
+			//I think we need to write the last yearTotal record here
+			//yearTotal.update();
 		}
+		yearTotal.update();  // write the last totals record
 		
 		
 		
@@ -107,7 +118,8 @@ DemandSupplyUtils.prototype = {
 				gs.info(yearList[i]);
 				calSum.initialize();
 				calSum.year = yearList[i];
-				calSum.record_type = 2;
+				calSum.record_type = "2";
+				calSum.summary_type = "3";
 				calSum.transition_plan_details = newTotalsId;
 				calSum.insert();
 				gs.info('calSum.transition_plan_header_details = ' + newTotalsId);
@@ -135,7 +147,7 @@ DemandSupplyUtils.prototype = {
 			newSum.initialize();
 			newSum.transition_plan_header = planId;
 			newSum.role = "fcc0a78ddb627b4044c32ab74b961914";  //Totals
-			newSum.order = 999;
+			newSum.order = 993;
 			newSum.insert();
 			gs.info('New Totals Detail created');
 			
@@ -143,19 +155,7 @@ DemandSupplyUtils.prototype = {
 			
 		}
 		
-		function sumCalendarAmts(dtlID) {
-			var cal = new GlideRecord("x_172976_dsm_mvp_transition_plan_calendar");
-			cal.addQuery("transition_plan_details", dtlID);
-			cal.orderBy("year");
-			cal.query();
-			while (cal.next()) {
-				gs.info('calendar year = ' + cal.year);
-				var yearTotal = getYearTotalRec(cal.year);
-				//addCalToTotals(cal.sys_id, yearTotalId);
-				addCalToTotals(cal, yearTotal);
-			}
-			
-		}
+		
 		
 		function getYearTotalRec(cal_year) {
 			var queryString = "transition_plan_details.role.type=Totals^year=" + cal_year;
@@ -165,15 +165,84 @@ DemandSupplyUtils.prototype = {
 			totalCal.query();
 			totalCal.next();
 			return totalCal;
-			//return totalCal.sys_id;
+			
 		}
 		
 		function addCalToTotals(detail, total) {
-			gs.info('detail = ' + detail);
-			gs.info('total = ' + total);
-		}
+			//gs.info('detail = ' + detail);
+			//gs.info('total = ' + total);
+			//add to the totals record
+			if (detail.year == total.year) {
+				addToTotals(detail, total);
+			} else {
+				//Update the totals record
+				total.update();
+				//then zero the record and add the detail to the total!!!
+				zeroOutTotals(detail,total);
+				addToTotals(detail, total);
+			}
 			
-
+		}
+		
+		function addToTotals(detail, total) {
+			total.amount = total.amount + detail.amount;
+			total.april = total.april + detail.april;
+			total.april_cost = total.april_cost + detail.april_cost;
+			total.aug = total.aug + detail.aug;
+			total.aug_cost = total.aug_cost + detail.aug_cost;
+			total.dec = total.dec + detail.dec;
+			total.dec_cost = total.dec_cost + detail.dec_cost;
+			total.feb = total.feb + detail.feb;
+			total.feb_cost = total.feb_cost + detail.feb_cost;
+			total.jan = total.jan + detail.jan;
+			total.jan_cost = total.jan_cost + detail.jan_cost;
+			total.july = total.july + detail.july;
+			total.july_cost = total.july_cost + detail.july_cost;
+			total.june = total.june + detail.june;
+			total.june_cost = total.june_cost + detail.june_cost;
+			total.mar = total.mar + detail.mar;
+			total.mar_cost = total.mar_cost + detail.mar_cost;
+			total.may = total.may + detail.may;
+			total.may_cost = total.may_cost + detail.may_cost;
+			total.nov = total.nov + detail.nov;
+			total.nov_cost = total.nov_cost + detail.nov_cost;
+			total.oct = total.oct + detail.oct;
+			total.oct_cost = total.oct_cost = detail.oct_cost;
+			total.sept = total.sept + detail.sept;
+			total.sept_cost = total.sept_cost + detail.sept_cost;
+			
+			total.sum_total_cost = total.sum_total_cost + detail.total_cost;
+		}
+		
+		function zeroOutTotals(detail,total) {
+			total.amount = 0;
+			total.april = 0;
+			total.april_cost = 0;
+			total.aug = 0;
+			total.aug_cost = 0;
+			total.dec = 0;
+			total.dec_cost = 0;
+			total.feb = 0;
+			total.feb_cost = 0;
+			total.jan = 0;
+			total.jan_cost = 0;
+			total.july = 0;
+			total.july_cost = 0;
+			total.june = 0;
+			total.june_cost = 0;
+			total.mar = 0;
+			total.mar_cost = 0;
+			total.may = 0;
+			total.may_cost = 0;
+			total.nov = 0;
+			total.nov_cost = 0;
+			total.oct = 0;
+			total.oct_cost = 0;
+			total.sept = 0;
+			total.sept_cost = 0;
+			total.sum_total_cost = 0;
+		}
+		
 	},
 	
 	
@@ -185,7 +254,7 @@ DemandSupplyUtils.prototype = {
         <sys_created_on>2019-07-03 13:12:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1ba4052fdb5ab34044c32ab74b961906</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>DemandSupplyUtils</sys_name>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
         <sys_policy>read</sys_policy>
@@ -193,6 +262,6 @@ DemandSupplyUtils.prototype = {
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_script_include_1ba4052fdb5ab34044c32ab74b961906</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2019-07-08 20:10:39</sys_updated_on>
+        <sys_updated_on>2019-07-09 15:13:32</sys_updated_on>
     </sys_script_include>
 </record_update>
