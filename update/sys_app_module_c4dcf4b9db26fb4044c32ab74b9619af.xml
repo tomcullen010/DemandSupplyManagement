@@ -5,41 +5,43 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter/>
+        <filter table="x_172976_dsm_mvp_transition_plan">state=3^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
         <hint/>
         <homepage/>
         <image/>
         <link_type>LIST</link_type>
         <map_page/>
-        <mobile_title>Transistion Plan Headers</mobile_title>
+        <mobile_title>Anthem SLTs/GIC Leader view</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
-        <name>x_172976_dsm_mvp_transistion_plan_header</name>
-        <order>100</order>
+        <name>x_172976_dsm_mvp_transition_plan</name>
+        <order>500</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_172976_dsm_mvp.user</roles>
+        <roles>x_172976_dsm_mvp.transition_app_dev_view_user</roles>
         <survey/>
-        <survey_overwrite>false</survey_overwrite>
+        <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2019-06-15 15:25:37</sys_created_on>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2019-07-10 12:21:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>81b770754f023300a9c2224f9310c7d5</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Transistion Plan</sys_name>
+        <sys_id>c4dcf4b9db26fb4044c32ab74b9619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Anthem SLTs/GIC Leader view</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
-        <sys_update_name>sys_app_module_81b770754f023300a9c2224f9310c7d5</sys_update_name>
+        <sys_update_name>sys_app_module_c4dcf4b9db26fb4044c32ab74b9619af</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2019-07-09 18:43:23</sys_updated_on>
+        <sys_updated_on>2019-07-10 12:21:21</sys_updated_on>
         <timeline_page/>
-        <title>Transistion Plan</title>
+        <title>Anthem SLTs/GIC Leader view</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

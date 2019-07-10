@@ -114,6 +114,139 @@
             <sys_updated_on>2019-06-24 15:55:33</sys_updated_on>
             <value>5</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transition complete</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>5</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-10 11:57:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9437b0fddbe2fb4044c32ab74b9619d3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-10 11:57:37</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>10</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-10 11:49:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a9f570bddbe2fb4044c32ab74b96193c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-10 11:51:14</sys_updated_on>
+            <value>-5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>20</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-10 11:51:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3346387ddbe2fb4044c32ab74b961950</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-10 11:51:38</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Work in Progress</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>30</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-10 11:50:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dc16f03ddbe2fb4044c32ab74b961928</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-10 11:51:18</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GIC SPOC Approved</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>40</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-10 11:53:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b26638b9dbe2fb4044c32ab74b961981</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-10 11:54:35</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Anthem SLT Approved</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>50</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-10 11:54:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b0e6f4bddbe2fb4044c32ab74b9619f0</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-10 11:54:39</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>x_172976_dsm_mvp_transistion_plan_header</name>
+            <sequence>60</sequence>
+            <sys_created_by>tom.cullen</sys_created_by>
+            <sys_created_on>2019-07-10 11:54:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1b1730bddbe2fb4044c32ab74b9619f6</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>tom.cullen</sys_updated_by>
+            <sys_updated_on>2019-07-10 11:54:55</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>state</element>
             <name>x_172976_dsm_mvp_transistion_plan_header</name>

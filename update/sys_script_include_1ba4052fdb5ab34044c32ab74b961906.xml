@@ -19,9 +19,7 @@ DemandSupplyUtils.prototype = {
 		
 		
 		// Store amount in the details record for the appropriate year
-		// Should rename the average headcount fields year1_headcount .. year2_headcount ..
-		
-		// calculate Monthly costs
+	    // calculate Monthly costs
 		var avg_cost = current.transition_plan_details.avg_cost_headcount_hr;
 		current.jan_cost = current.jan * avg_cost;
 		current.feb_cost = current.feb * avg_cost;
@@ -77,7 +75,7 @@ DemandSupplyUtils.prototype = {
 				if (saveYear !== '0000') {
 					yearTotal.update();   //after the first pass .. update on a change of year
 				}
-				yearTotal = getYearTotalRec(cal.year);
+				yearTotal = getYearTotalRec(cal.year, current.sys_id);
 				saveYear = yearTotal.year;
 			}
 			addCalToTotals(cal, yearTotal);
@@ -157,8 +155,8 @@ DemandSupplyUtils.prototype = {
 		
 		
 		
-		function getYearTotalRec(cal_year) {
-			var queryString = "transition_plan_details.role.type=Totals^year=" + cal_year;
+		function getYearTotalRec(cal_year, planID) {
+			var queryString = "transition_plan_header.sys_id=" + planID + "^transition_plan_details.role.type=Totals^year=" + cal_year;
 			var totalCal = new GlideRecord("x_172976_dsm_mvp_transition_plan_calendar");
 			totalCal.addEncodedQuery(queryString);
 			totalCal.setLimit(1);
@@ -207,10 +205,11 @@ DemandSupplyUtils.prototype = {
 			total.nov = total.nov + detail.nov;
 			total.nov_cost = total.nov_cost + detail.nov_cost;
 			total.oct = total.oct + detail.oct;
-			total.oct_cost = total.oct_cost = detail.oct_cost;
+			total.oct_cost = total.oct_cost + detail.oct_cost;
 			total.sept = total.sept + detail.sept;
 			total.sept_cost = total.sept_cost + detail.sept_cost;
 			
+			total.amount = total.amount + detail.total_amount;
 			total.sum_total_cost = total.sum_total_cost + detail.total_cost;
 		}
 		
@@ -254,7 +253,7 @@ DemandSupplyUtils.prototype = {
         <sys_created_on>2019-07-03 13:12:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1ba4052fdb5ab34044c32ab74b961906</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>DemandSupplyUtils</sys_name>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
         <sys_policy>read</sys_policy>
@@ -262,6 +261,6 @@ DemandSupplyUtils.prototype = {
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_script_include_1ba4052fdb5ab34044c32ab74b961906</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2019-07-09 15:13:32</sys_updated_on>
+        <sys_updated_on>2019-07-09 17:22:43</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Show-Hide Approval related list</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Only show approvals related list if plan type is App Dev or higher
+	var plan_type = g_form.getValue('plan_type');
+	if (plan_type < 3) {
+		g_form.hideRelatedList('sysapproval_approver');
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>tom.cullen</sys_created_by>
+        <sys_created_on>2019-07-09 18:35:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1398c929dbee77c0bcf880876896198e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Show-Hide Approval related list</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
+        <sys_update_name>sys_script_client_1398c929dbee77c0bcf880876896198e</sys_update_name>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2019-07-09 18:41:08</sys_updated_on>
+        <table>x_172976_dsm_mvp_transistion_plan_header</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
