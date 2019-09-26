@@ -25,7 +25,7 @@
         <list_style/>
         <name>Calculate Plan Totals</name>
         <onclick/>
-        <order>100</order>
+        <order>200</order>
         <script><![CDATA[action.setRedirectURL(current);
 //calculate Plan totals
 var dsu = new DemandSupplyUtils();
@@ -42,7 +42,7 @@ dsu.calcPlanTotals(current);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4975f381dbe27b4044c32ab74b9619a2</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Calculate Plan Totals</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -51,7 +51,7 @@ dsu.calcPlanTotals(current);
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_ui_action_4975f381dbe27b4044c32ab74b9619a2</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2019-07-09 16:18:40</sys_updated_on>
+        <sys_updated_on>2019-07-10 19:54:54</sys_updated_on>
         <table>x_172976_dsm_mvp_transistion_plan_header</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

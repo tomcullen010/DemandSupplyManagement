@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Transition Plan Calendar" max_length="40" name="x_172976_dsm_mvp_transition_plan_calendar" type="collection">
-        <element default="0" label="Average Headcount Amount" max_length="20" name="amount" type="decimal"/>
+        <element attributes="text-align:left" default="0" label="Average Headcount Amount" max_length="20" name="amount" type="decimal"/>
         <element default="0.0" label="April" max_length="20" name="april" type="decimal"/>
         <element default="0" label="April cost" max_length="20" name="april_cost" type="currency"/>
         <element default="0.0" label="Aug" max_length="20" name="aug" type="decimal"/>

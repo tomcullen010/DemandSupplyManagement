@@ -33,6 +33,7 @@ gs.include('ActionUtils');
 var au = new ActionUtils();
 au.postInsert(current);
 
+//roll up the details....
 function updateHeaderDetailCount(current) {
 	var txnH = new GlideRecord("x_172976_dsm_mvp_transistion_plan_header");
 	txnH.addQuery("sys_id", current.transition_plan_header.sys_id); //transition_plan_details
@@ -54,7 +55,7 @@ function updateHeaderDetailCount(current) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>775df2644f523300a9c2224f9310c762</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Submit</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -62,8 +63,8 @@ function updateHeaderDetailCount(current) {
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_ui_action_775df2644f523300a9c2224f9310c762</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-06-24 14:45:28</sys_updated_on>
+        <sys_updated_by>tom.cullen</sys_updated_by>
+        <sys_updated_on>2019-07-10 21:19:59</sys_updated_on>
         <table>x_172976_dsm_mvp_transition_plan</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
