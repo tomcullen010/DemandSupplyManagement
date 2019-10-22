@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>81b770754f023300a9c2224f9310c7d5</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Transistion Plan</sys_name>
         <sys_overrides/>
         <sys_package display_value="Demand Supply Management" source="x_172976_dsm_mvp">4f3b82414f023300a9c2224f9310c741</sys_package>
@@ -37,11 +37,11 @@
         <sys_scope display_value="Demand Supply Management">4f3b82414f023300a9c2224f9310c741</sys_scope>
         <sys_update_name>sys_app_module_81b770754f023300a9c2224f9310c7d5</sys_update_name>
         <sys_updated_by>tom.cullen</sys_updated_by>
-        <sys_updated_on>2019-07-09 18:43:23</sys_updated_on>
+        <sys_updated_on>2019-10-08 14:22:04</sys_updated_on>
         <timeline_page/>
         <title>Transistion Plan</title>
         <uncancelable>false</uncancelable>
-        <view_name/>
+        <view_name>Plan View</view_name>
         <window_name/>
     </sys_app_module>
 </record_update>
